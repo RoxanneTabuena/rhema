@@ -1,0 +1,16 @@
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    .operations{
+    width: 100%;
+    }
+    
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .operations{
+     display: flex;
+    }
+
+}

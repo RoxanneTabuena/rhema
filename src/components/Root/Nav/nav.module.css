@@ -1,0 +1,15 @@
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+
+    .icon {
+        width: 2em;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .icon {
+        width: 5em;
+    }
+
+}

@@ -1,0 +1,24 @@
+.miniArt{
+    position: relative;
+    max-width: 100%;
+}
+
+.miniArt>p {
+    position: relative;
+    z-index: 20;
+}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    .miniArt {
+        margin: 1em .5em 2em;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .miniArt {
+        margin: 1em .5em 2em;
+    }
+
+}

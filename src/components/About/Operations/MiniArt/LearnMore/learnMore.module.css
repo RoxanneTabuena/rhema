@@ -1,0 +1,52 @@
+
+.absolute{
+    position: absolute;
+    right: 0;
+}
+.learnMore{
+    position: relative;
+    z-index: 10;
+}
+.learnMore p {
+    font-family: 'highlights';
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    
+    .absolute{
+    height: 3em;
+    bottom: -45px;
+    }
+
+    .learnMore img {
+        height: 3em;
+    }
+
+    .learnMore p {
+        transform: translate(-16px, 50%);
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+        
+    .absolute{
+    height: 4em;
+    bottom: -112px;
+    }
+
+    .learnMore img {
+        height: 4em;
+    }
+
+    .learnMore p {
+        font-size: 1.25em;
+        transform: translate(-56px, 50%);
+    }
+}

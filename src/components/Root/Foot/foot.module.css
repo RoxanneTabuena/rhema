@@ -1,0 +1,16 @@
+.title{
+    display: flex;
+    align-items: baseline;
+    width: fit-content;
+}
+.title>*{
+    height: 32px;
+    font-size: 2em;
+}
+
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {}

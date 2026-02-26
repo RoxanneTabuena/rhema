@@ -1,0 +1,31 @@
+.reviews {
+    margin-top: .5em;
+}
+
+.stars {
+    display: flex;
+}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .stars {
+        justify-content: center;
+    }
+
+    .stars >img {
+        width: 5em;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .links > * {
+        max-width: 45%;
+        width: 45%;
+    }
+}

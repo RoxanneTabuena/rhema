@@ -1,0 +1,24 @@
+.review a{
+    text-decoration: none;
+}
+
+p {
+    font-weight: bold;
+    margin: 1em;
+}
+
+.review h4 {
+    text-align: right;
+    color:blueviolet
+}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .reviwe p {
+        font-size: 1.5em;
+    }
+}
