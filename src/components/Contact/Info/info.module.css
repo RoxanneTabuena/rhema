@@ -1,0 +1,27 @@
+.info h3, h4{
+    text-align: left;    
+}
+
+.info h3{
+    font-family: 'Highlights';
+    color:blueviolet
+}
+
+.info h4{
+    font-family: 'Titles';
+    color:mediumslateblue;
+}
+
+.art *{
+    margin: 0;
+}
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    .art {
+        margin: .5em;
+        text-align: left;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {}
