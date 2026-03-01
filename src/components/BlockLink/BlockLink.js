@@ -1,6 +1,9 @@
 import { NavLink } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import style from './blockLink.module.css'
 export const BlockLink = ({verb, title, destination}) => {
+    const {pathname} = useLocation()
+    const hide = pathname !== '/'
     const deskCovers = {
         '/liveSound' : {
             img : `https://imagehostclub.s3.us-west-1.amazonaws.com/rhema/truck.png`,
@@ -13,7 +16,9 @@ export const BlockLink = ({verb, title, destination}) => {
     }
     return (
         <NavLink className={style.blockLink} to={destination}>
+            {!hide && 
             <img className={style.cover} src={deskCovers[destination].img} alt={deskCovers[destination].alt}></img>
+            }
             <img className={style.arrow} src="https://imagehostclub.s3.us-west-1.amazonaws.com/rhema/arrow.png" alt="arrow icon"></img>
             <p className={style.verb}>{verb}</p>
             <h2 className={style.title}>{title}</h2>

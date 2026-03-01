@@ -26,6 +26,19 @@ export const Info = ({type}) => {
                 p: '(808) 677-0097'
                 },
             ]
+        },
+        office: {
+            h3: 'OFFICE HOURS',
+            content: [
+                {
+                h4: 'Weekdays',
+                p: '8:30am - 530pm'
+                },
+                {
+                h4: 'Weekends',
+                p: 'Closed'
+                },
+            ]
         }
     }
     info = info[type]
