@@ -9,8 +9,8 @@ export const Contact = () => {
             <p className={style.main}>{`"How can we assist you?"`}</p>
             <div className={style.side}>
                 <div className={style.links}>
-                    <BlockLink verb="BOOK" title="Pro Sound Services" destination="/liveSound"/>
-                    <BlockLink verb="RESERVE" title="Backline Rentals" destination="/backlineRentals"/>
+                    <BlockLink verb="BOOK" title="Pro Sound Services" destination="/bookLiveSound"/>
+                    <BlockLink verb="RESERVE" title="Backline Rentals" destination="/reserveBacklineRentals"/>
                     <BlockLink verb="ASK" title="General Questions" destination="/generalInquiry"/>
                 </div>
                 <div className={style.physical}>

@@ -1,0 +1,85 @@
+.liveSound {
+    position: relative;
+    max-height: 90vh;
+}
+
+.liveSound>h1 {
+    font-family: 'Highlights';
+    text-align: center;
+    margin: .5em 0 auto;
+    position: absolute;
+    width: 100%;
+    color:blueviolet;
+    pointer-events: none;
+    z-index: 20;
+}
+
+.content {
+    height: 85vh;
+    overflow: scroll;
+}
+
+h3{
+    font-family: 'titles';
+}
+
+.content h2{
+    font-family: 'highlights';
+}
+
+h3{
+    color:mediumslateblue;
+}
+
+h4{
+    color: white;
+}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+
+    .main {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: .5em;
+}
+
+    .content h2, h3,h4 {
+        font-size: 1.5em;
+    }
+
+    .liveSound> h1{
+        font-size: 2em;
+        top:-35px;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .main {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: .5em 2em;
+    font-size: 1.5em;
+    }
+
+    .liveSound {
+    padding-top: 3em;
+    }
+
+    .content h2{
+        font-size: 3em;
+    }
+    
+    h3, h4 {
+        font-size: 2.5em;
+    }
+    
+    .liveSound> h1{
+        font-size: 5em;
+        top:-200px;
+    }
+
+}

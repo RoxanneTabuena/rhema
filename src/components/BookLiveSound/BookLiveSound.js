@@ -1,8 +1,10 @@
-import style from './bookLiveSound.css'
+import style from './bookLiveSound.module.css'
 export const BookLiveSound = () => {
-    return (<div>
-        <h1 className = {style.logo} >Rhema Services</h1>
-        <h2>"Hawaii's Industry Choice for Audio"</h2>
-
+    return (
+    <div className={style.liveSound}>
+        <h1>Book Live Sound</h1>
+        <div className={style.content}>
+            <p className={style.main}>request an instant quote</p>
+        </div>
     </div>)
 }
