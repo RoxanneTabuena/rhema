@@ -6,7 +6,7 @@ import { useState } from 'react'
 import style from './quote.module.css'
 import { Alert } from '../../Alert'
 import { service_id, template_id, public_key } from "../../keys"
-import emailjs from '@emailjs/browser'
+import emailjs from 'emailjs-com'
 
 export const Quote = () => {
     const [ name, setName ] = useState('')
@@ -15,6 +15,7 @@ export const Quote = () => {
     const [ eventType, setEventType ] = useState('')
     const [ startDate, setStartDate ] = useState('')
     const [ startTime, setStartTime ] = useState('')
+    const [ multi, setMulti] = useState(false)
     const [alertActive, setAlertActive] = useState(false)
     const [outcome, setOutcome] = useState('success')
 
@@ -52,7 +53,7 @@ export const Quote = () => {
     ]
 
     return (
-        <form onS className={style.quote}>
+        <form onSubmit={handleSubmit} className={style.quote}>
             <Alert active={alertActive} outcome={outcome} handleClose={handleClose}/>
             {/* contact: name, phone, email; 
             event: event type, audience size ,date(s), start time, end time, 
