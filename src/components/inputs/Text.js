@@ -1,5 +1,5 @@
 import style from './input.module.css'
-export const Text = ({id, onChange, value}) => {
+export const Text = ({id, onChange, value, placeholder}) => {
     const label = (id) => {
         return id.charAt(0).toUpperCase() + id.slice(1) + ':';
     }
@@ -11,7 +11,7 @@ export const Text = ({id, onChange, value}) => {
                 id={id} 
                 name={id}
                 value = {value}
-                placeholder={id}
+                placeholder={placeholder? placeholder : id}
                 onChange = {({target})=> onChange(target.value)} 
                 required />
         </div>
