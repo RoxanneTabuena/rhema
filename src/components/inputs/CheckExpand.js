@@ -1,19 +1,14 @@
 import style from './input.module.css'
-export const Time = ({id, onChange, value}) => {
-    const label = (id) => {
-        return id.charAt(0).toUpperCase() + id.slice(1) + ':';
-    }
+export const CheckExpand = ({onChange, label, value}) => {
+
     return (
-        <div className={style.time}>
-            <label>{label(id)}</label>
+        <div className={style.checkExpand}>
             <input 
-                type="time" 
-                id={id} 
-                name={id}
+                type="checkbox" 
                 value = {value}
-                placeholder={id}
-                onChange = {({target})=> onChange(target.value)} 
-                required />
+                onChange = {()=> onChange(!value)} 
+                />
+            <label>{label}</label>
         </div>
     )
 }
