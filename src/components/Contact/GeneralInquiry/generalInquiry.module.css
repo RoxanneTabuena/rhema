@@ -6,7 +6,7 @@
 .generalInquiry>h1 {
     font-family: 'Highlights';
     text-align: center;
-    margin: .5em 0 auto;
+    margin: 0 auto;
     position: absolute;
     width: 100%;
     color:blueviolet;
@@ -15,6 +15,8 @@
 }
 
 .content {
+    /* padding-top: 1em; */
+    margin-top: 1em;
     height: 85vh;
     overflow: scroll;
 }
@@ -43,7 +45,7 @@ h3{
 
     .generalInquiry> h1{
         font-size: 2em;
-        top:-35px;
+        top:-40px;
     }
 }
 

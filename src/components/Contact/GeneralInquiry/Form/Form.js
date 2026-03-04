@@ -75,11 +75,11 @@ export const Form = () => {
             <input type='hidden' id="title" value="GENERAL"/>
             <Alert active={alertActive} outcome={outcome} handleClose={handleClose}/>
             {/* consent, not a robot */}
+            <ContactSec info={contactSec}/>
             <h3>Send a Message</h3>
             <Dropdown id="type" onChange={setType} options={inquiries} value={type} label={"Topic"}/>
             <p>Message:</p>
             <TextBox id="message" onChange={setMessage} value={message} placeholder={"your message here"}/>
-            <ContactSec info={contactSec}/>
             <Submit />
         </form>
     )
