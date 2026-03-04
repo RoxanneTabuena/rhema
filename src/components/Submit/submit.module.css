@@ -1,0 +1,56 @@
+
+.absolute{
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+}
+.submit{
+    position: relative;
+    z-index: 10;
+}
+.submit p {
+    color: white;
+    background-color: transparent;
+    font-family: 'highlights';
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    
+    .absolute{
+    height: 3em;
+    bottom: -45px;
+    }
+
+    .submit img {
+        height: 3em;
+    }
+
+    .submit p {
+        font-size: 1.5em;
+        transform: translate(-48px, 50%);
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+        
+    .absolute{
+    height: 4em;
+    bottom: -112px;
+    }
+
+    .submit img {
+        height: 4em;
+    }
+
+    .submit p {
+        font-size: 1.25em;
+        transform: translate(-56px, 50%);
+    }
+}
