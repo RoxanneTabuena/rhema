@@ -1,0 +1,40 @@
+.input{
+    border: black solid 1pt;
+}
+
+select, textarea, input {
+    color:slateblue
+}
+
+.textBox{
+    border: none;
+}
+
+.text input, .dropdown select{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: black solid 1pt;
+    margin-left: .5em;
+}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    input {
+        margin: .5em 0;
+    }
+
+    .textBox {
+        text-align: right;
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 5em;
+        resize: vertical;
+        field-sizing: content;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {}

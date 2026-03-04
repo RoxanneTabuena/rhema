@@ -9,15 +9,41 @@ import { Product } from './components/BacklineRentals/Product/Product'
 import { OurExperts } from './components/OurExperts/OurExperts';
 import { Expert } from './components/OurExperts/Expert/Expert';
 import { Contact } from './components/Contact/Contact';
-import { JoinRhema } from './components/JoinRhema/JoinRhema';
+import { JoinRhema } from './components/Contact/JoinRhema/JoinRhema';
 import { Booking } from './components/Booking/Booking';
-import { BookLiveSound } from './components/BookLiveSound/BookLiveSound';
-import { ReserveBacklineRentals } from './components/ReserveBacklineRentals/ReserveBacklineRentals';
-import { GeneralInquiry } from './components/GeneralInquiry/GeneralInquiry';
+import { BookLiveSound } from './components/Contact/BookLiveSound/BookLiveSound';
+import { ReserveBacklineRentals } from './components/Contact/ReserveBacklineRentals/ReserveBacklineRentals';
+import { GeneralInquiry } from './components/Contact/GeneralInquiry/GeneralInquiry';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import './App.css';
 
 function App() {
+
+
+  //  Done:
+  //  about
+  //  contact
+  //  To Do:
+  //  Monday
+  //  add ts & redux 2h
+  //  emailjshookup .5h
+  //  general inquiry .5h
+  //  booklivesound .5h
+  //  rentals logo finding 1h
+  //  Tuesday
+  //  rentals 1h
+  //  rental .5h
+  //  reservebalckinerentals 1h
+  //  services .5h
+  //  service .5h
+  //  booking .5h
+  //  Wednesday
+  //  root 1h
+  //  our experts 1h
+  //  footer .5h
+  //  home .5h
+  //  deploy .75h
+  //  audio scroller 2h
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Root/>}>
       <Route index element= { <Home />}/>
