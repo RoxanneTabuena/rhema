@@ -1,0 +1,30 @@
+.form{
+    background-color: white;
+    color: black;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    font-weight: normal;
+    margin: 0;
+}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    .form {
+        width: 90%;
+        margin: auto;
+        padding: .5em;
+        border-radius: 20px;
+    }
+
+    .form .input {
+        border-radius: 8px;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {}
