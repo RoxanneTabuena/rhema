@@ -1,0 +1,14 @@
+
+.preferred {
+    display: flex
+}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    .contactSec p{
+        text-align: center;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {}

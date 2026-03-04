@@ -1,0 +1,8 @@
+.quote{
+}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {}
