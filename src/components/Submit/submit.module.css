@@ -1,7 +1,7 @@
 
 .absolute{
-    position: absolute;
-    right: 0;
+    float: right;
+    position: relative;
     background-color: transparent;
 }
 .submit{
@@ -23,8 +23,9 @@
 @media screen and ( max-width: 699px) {
     
     .absolute{
-    height: 3em;
-    bottom: -45px;
+        height: 3em;
+        left:32px;
+        bottom: 8px;
     }
 
     .submit img {
