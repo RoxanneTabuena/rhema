@@ -1,5 +1,9 @@
 export const initialCartState = {
-    items: ["butt monkeys it worked!"]
+    items: ["butt monkeys it worked!"],
+    dates: {
+        pickup: 'ya ma',
+        return: ''
+    }
     };
 
 export function cartReducer(state, action) {
