@@ -3,6 +3,7 @@ export const Category = () => {
     return (
         <div className={style.category}>
             {/* filter: brand , only if many*/}
+            {/* product previews */}
         </div>
     )
 }

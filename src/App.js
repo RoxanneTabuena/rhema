@@ -17,6 +17,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import { useReducer } from "react";
 import { CartContext } from './context/CartContext';
 import { cartReducer, initialCartState } from "./reducers/cartReducer";
+import { Product } from './components/Rentals/category/Product/Product';
 import './App.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Route path='services' element= { <Services />}/>
       <Route path='services/:service' element= { <Service />}/>
       <Route path='rentals' element= { <Rentals />}/>
+      <Route path='rentals/:product' element= { <Product />}/>
       <Route path='services' element= { <Services />}/>
       <Route path='ourExperts' element= { <OurExperts />}/>
       <Route path='ourExperts/:expert' element= { <Expert />}/>

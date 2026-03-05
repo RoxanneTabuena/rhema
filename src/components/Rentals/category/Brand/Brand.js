@@ -5,4 +5,5 @@ export const Brand = () => {
             {/* list product previews */}
         </div>
     )
+
 }

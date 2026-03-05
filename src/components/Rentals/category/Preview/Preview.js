@@ -1,8 +1,9 @@
-import style from './comp.module.css'
-export const Comp = () => {
+import style from './preview.module.css'
+export const Preview = () => {
     return (
-        <div className={style.comp}>
-
+        <div className={style.preview}>
+            {/* {product title, picture, availability, quick add} */}
+            {/* click for full product page */}
         </div>
     )
 }
