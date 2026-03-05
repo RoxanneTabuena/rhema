@@ -1,8 +1,8 @@
 export const initialCartState = {
     items: ["butt monkeys it worked!"],
     dates: {
-        pickup: 'ya ma',
-        return: ''
+        pickup: '2026-03-24',
+        dropoff: '2026-03-24'
     }
     };
 
@@ -47,6 +47,22 @@ switch (action.type) {
             ? { ...item, qty: action.payload.qty }
             : item
         )
+    };
+
+    case "PICKUP":
+    return {
+        ...state,
+        dates: {...state.dates,
+            pickup: action.payload
+        }
+    };
+
+    case "DROPOFF":
+    return {
+        ...state,
+        dates: {...state.dates,
+            dropoff: action.payload
+        }
     };
 
     case "CLEAR_CART":

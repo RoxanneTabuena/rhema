@@ -1,3 +1,4 @@
+import { Dates } from './Dates/Dates'
 import { useCart } from '../../hooks/useCart'
 import { Relative } from './relative/Relative'
 import style from './rentals.module.css'
@@ -11,6 +12,7 @@ export const Rentals = () => {
         <div className={style.content}>
             <p className={style.main}>main information for the page</p>
             {/* date input */}
+            <Dates/>
             <Relative/>
             {/* relative nav */}
             {/* categories */}

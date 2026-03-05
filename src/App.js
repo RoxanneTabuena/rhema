@@ -30,6 +30,9 @@ function App() {
       <Route path='services' element= { <Services />}/>
       <Route path='services/:service' element= { <Service />}/>
       <Route path='rentals' element= { <Rentals />}/>
+      <Route path='rentals/:category' element= { <Rentals />}/>
+      <Route path='rentals/:category/:brand' element= { <Rentals />}/>
+      <Route path='rentals' element= { <Rentals />}/>
       <Route path='rentals/:product' element= { <Product />}/>
       <Route path='services' element= { <Services />}/>
       <Route path='ourExperts' element= { <OurExperts />}/>
