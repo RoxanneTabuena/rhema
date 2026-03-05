@@ -6,8 +6,8 @@
 .rentals>h1 {
     font-family: 'Highlights';
     text-align: center;
-    margin: .5em 0 auto;
-    position: absolute;
+    margin: auto;
+    position: relative;
     width: 100%;
     color:blueviolet;
     pointer-events: none;
@@ -15,7 +15,8 @@
 }
 
 .content {
-    height: 85vh;
+    position:relative;
+    min-height: 90vh;
     overflow: scroll;
 }
 
@@ -42,7 +43,10 @@
 
     .rentals> h1{
         font-size: 2em;
-        top:-35px;
+    }
+    
+    .rentals, .content {
+        top: -20px;
     }
 
 }
@@ -53,7 +57,6 @@
     font-weight: bold;
     font-style: italic;
     text-align: center;
-    padding: .5em 2em;
     font-size: 1.5em;
     }
 
@@ -69,9 +72,8 @@
         font-size: 2.5em;
     }
     
-    .rentals> h1{
-        font-size: 5em;
-        top:-200px;
+    .rentals, .content {
+        top: - 200px
     }
 
 }
