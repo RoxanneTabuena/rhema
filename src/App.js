@@ -4,8 +4,7 @@ import { About } from './components/About/About';
 import { LiveSound } from './components/LiveSound/LiveSound';
 import { Services } from './components/Services/Services';
 import { Service } from './components/Services/Service/Service';
-import { BacklineRentals} from './components/BacklineRentals/BacklineRentals';
-import { Product } from './components/BacklineRentals/Product/Product'
+import { Rentals} from './components/Rentals/Rentals';
 import { OurExperts } from './components/OurExperts/OurExperts';
 import { Expert } from './components/OurExperts/Expert/Expert';
 import { Contact } from './components/Contact/Contact';
@@ -29,9 +28,8 @@ function App() {
       <Route path='liveSound' element= { <LiveSound />}/>
       <Route path='services' element= { <Services />}/>
       <Route path='services/:service' element= { <Service />}/>
-      <Route path='backlinerentals' element= { <BacklineRentals />}/>
+      <Route path='rentals' element= { <Rentals />}/>
       <Route path='services' element= { <Services />}/>
-      <Route path='backlinerentals/:product' element= { <Product />}/>
       <Route path='ourExperts' element= { <OurExperts />}/>
       <Route path='ourExperts/:expert' element= { <Expert />}/>
       <Route path='contact' element= { <Contact />}/>
@@ -45,7 +43,7 @@ function App() {
   ))
   const [ state, dispatch ] = useReducer( cartReducer, initialCartState)
   return (
-    <CartContext.Provider value={{state, dispatch}}>
+    <CartContext.Provider value={[state, dispatch]}>
       <RouterProvider router={router}/>
     </CartContext.Provider>
   );

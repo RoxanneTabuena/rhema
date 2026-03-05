@@ -7,8 +7,9 @@
    booklivesound .5h
 
    To Do:
-   add context provider 1h
-   rentals 1h
+   3/5
+   add context provider 1h 9-10
+   rentals structure pseudo 15m 1002-
    rental .5h
 
    reservebalckinerentals 1h
