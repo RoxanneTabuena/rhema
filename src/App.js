@@ -19,31 +19,6 @@ import './App.css';
 
 function App() {
 
-
-  //  Done:
-  //  about
-  //  contact
-  //  To Do:
-  //  Monday
-  //  add ts & redux 2h
-  //  emailjshookup .5h
-  //  general inquiry .5h
-  //  booklivesound .5h
-  //  rentals logo finding 1h
-  //  Tuesday
-  //  rentals 1h
-  //  rental .5h
-  //  reservebalckinerentals 1h
-  //  services .5h
-  //  service .5h
-  //  booking .5h
-  //  Wednesday
-  //  root 1h
-  //  our experts 1h
-  //  footer .5h
-  //  home .5h
-  //  deploy .75h
-  //  audio scroller 2h
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<Root/>}>
       <Route index element= { <Home />}/>
