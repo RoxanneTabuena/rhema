@@ -15,6 +15,9 @@ import { BookLiveSound } from './components/Contact/BookLiveSound/BookLiveSound'
 import { ReserveBacklineRentals } from './components/Contact/ReserveBacklineRentals/ReserveBacklineRentals';
 import { GeneralInquiry } from './components/Contact/GeneralInquiry/GeneralInquiry';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+import { useReducer } from "react";
+import { CartContext } from './context/CartContext';
+import { cartReducer, initialCartState } from "./reducers/cartReducer";
 import './App.css';
 
 function App() {
@@ -40,8 +43,11 @@ function App() {
 
     </Route>
   ))
+  const [ state, dispatch ] = useReducer( cartReducer, initialCartState)
   return (
-    <RouterProvider router={router}/>
+    <CartContext.Provider value={{state, dispatch}}>
+      <RouterProvider router={router}/>
+    </CartContext.Provider>
   );
 }
 
