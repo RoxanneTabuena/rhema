@@ -1,22 +1,23 @@
-import { drumInventoryCat } from './inventory'
-import { inventory } from './inventory'
+import { inventory, drumInventory } from './inventory'
+import { Category } from './category/Category'
 import { Dates } from './Dates/Dates'
-import { useCart } from '../../hooks/useCart'
 import { Relative } from './relative/Relative'
+import { useState, useEffect } from 'react'
 import style from './rentals.module.css'
 export const Rentals = () => {
-    const [state, dispatch] = useCart()
-    const { dates } = state
-    console.log(drumInventoryCat())
+
     
     return (
     <div className={style.rentals}>
-        <h1 className = {style.logo}>Rentals Us</h1>
+        <h1 className = {style.logo}>Rentals</h1>
         <div className={style.content}>
             <p className={style.main}>main information for the page</p>
             <Dates/>
             <Relative/>
-            {/* categories */}
+            {Object.keys(inventory).map((c)=>{
+                return <Category key={c} title={c}/>
+            })}
+            <Category title="Drums" />
         </div>
     </div>)
 } 
