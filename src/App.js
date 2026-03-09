@@ -17,7 +17,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import { useReducer } from "react";
 import { CartContext } from './context/CartContext';
 import { cartReducer, initialCartState } from "./reducers/cartReducer";
-import { Product } from './components/Rentals/category/Product/Product';
+import { Product } from './components/Rentals/Display/Items/Product';
 import './App.css';
 
 function App() {

@@ -1,11 +1,8 @@
-import { inventory, drumInventory } from './inventory'
-import { Category } from './category/Category'
+import { Display } from './Display/Display'
 import { Dates } from './Dates/Dates'
 import { Relative } from './relative/Relative'
-import { useState, useEffect } from 'react'
 import style from './rentals.module.css'
 export const Rentals = () => {
-
     
     return (
     <div className={style.rentals}>
@@ -14,10 +11,7 @@ export const Rentals = () => {
             <p className={style.main}>main information for the page</p>
             <Dates/>
             <Relative/>
-            {Object.keys(inventory).map((c)=>{
-                return <Category key={c} title={c}/>
-            })}
-            <Category title="Drums" />
+            <Display/>
         </div>
     </div>)
 } 

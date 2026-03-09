@@ -1,4 +1,4 @@
-import style from './product.module.css'
+import style from './items.module.css'
 export const Product = () => {
     return (
         <div className={style.product}>

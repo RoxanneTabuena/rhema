@@ -192,7 +192,7 @@ const inventoryCat = (productList) => {
     return products
 }
 
-export const drumInventoryCat = () => {
+export const drumInventory = () => {
     let drumInventory = {}
     drumSets.split('\n\n').forEach((s)=>{
         let pieces = s.split('\n')
