@@ -11,13 +11,12 @@ import { Contact } from './components/Contact/Contact';
 import { JoinRhema } from './components/Contact/JoinRhema/JoinRhema';
 import { Booking } from './components/Booking/Booking';
 import { BookLiveSound } from './components/Contact/BookLiveSound/BookLiveSound';
-import { ReserveBacklineRentals } from './components/Contact/ReserveBacklineRentals/ReserveBacklineRentals';
+import { Request } from './components/Contact/Request/Request'
 import { GeneralInquiry } from './components/Contact/GeneralInquiry/GeneralInquiry';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import { useReducer } from "react";
 import { CartContext } from './context/CartContext';
 import { cartReducer, initialCartState } from "./reducers/cartReducer";
-import { Product } from './components/Rentals/Display/Items/Product';
 import './App.css';
 
 function App() {
@@ -32,8 +31,7 @@ function App() {
       <Route path='rentals' element= { <Rentals />}/>
       <Route path='rentals/:category' element= { <Rentals />}/>
       <Route path='rentals/:category/:brand' element= { <Rentals />}/>
-      <Route path='rentals' element= { <Rentals />}/>
-      <Route path='rentals/:product' element= { <Product />}/>
+      <Route path='rentals/:category/:brand/:product' element= { <Rentals />}/>
       <Route path='services' element= { <Services />}/>
       <Route path='ourExperts' element= { <OurExperts />}/>
       <Route path='ourExperts/:expert' element= { <Expert />}/>
@@ -41,7 +39,7 @@ function App() {
       <Route path='joinRhema' element= { <JoinRhema />}/>
       <Route path='booking' element= { <Booking />}/>
       <Route path='bookLiveSound' element= { <BookLiveSound />}/>
-      <Route path='reserveBacklineRentals' element= { <ReserveBacklineRentals />}/>
+      <Route path='rentalRequest' element= { <Request />}/>
       <Route path='generalInquiry' element= { <GeneralInquiry />}/>
 
     </Route>
