@@ -81,6 +81,8 @@ export const Order = () => {
             <ContactSec info={contactSec}/>
             <h3>Rental Dates</h3>
             <Dates />
+            <Current/>
+            <Checklist />
             {/* current order */}
             {/* add to order */}
             <h3>Send a Message</h3>
