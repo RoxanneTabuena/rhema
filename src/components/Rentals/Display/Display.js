@@ -1,39 +1,41 @@
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate} from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { inventory } from '../inventory'
 import { Items } from './Items/Items'
 import { Brands } from './Brands/Brands'
 import { Categories } from './Categories/Categories'
+import { Product } from './Items/Product'
 import style from './display.module.css'
-export const Display = () => {
-    const {category, brand }= useParams()
-    const [display, setDisplay] = useState('')
 
+export const Display = () => {
+    const {category, brand, product }= useParams()
+    const [display, setDisplay] = useState('categories')
+    const navigate = useNavigate()
+
+    let item = product ? inventory[category].find(i=>i.name===product) : null
     useEffect(()=>{
-        if(category && inventory[category].length>6 && !brand){
-            setDisplay('brands')
-        }else if(!category){
-            setDisplay('categories')
-        }else{
+        if(product){
+            setDisplay('product')
+        }else if(brand){
             setDisplay('items')
+        }else if(category && inventory[category].length<6 ){
+            navigate(`/rentals/${category}/all`)
+        }else if(category){
+            setDisplay('brands')
+        }else{
+            setDisplay('categories')
         }
-        console.log(display)
-    },[category, brand])
+    },[product, brand, category])
+
     const displays = {
         'brands' : <Brands category={inventory[category]}/>,
         'categories' : <Categories />,
-        'items' : <Items items={inventory[category]} brand={brand}/>
+        'items' : <Items items={inventory[category]} brand={brand}/>,
+        'product' : <Product item={item}/>
     }
 
     return (
         <div className={style.display}>
-            {/* if a category is chosen and there are more than 7 items,
-            display brands
-            otherwise display items
-            if a category and a brand is chosen 
-            display items
-            if no category is chosen
-            display categories */}
             {displays[display]}
         </div>
     )
