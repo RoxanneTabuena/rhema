@@ -1,5 +1,5 @@
 export const initialCartState = {
-    items: ["butt monkeys it worked!"],
+    items: [{id:"420", name: "butt monkeys",brand:"ya mas", category:"Bass Amps" , qty:1}],
     dates: {
         pickup: '2026-03-24',
         dropoff: '2026-03-24'
@@ -13,18 +13,18 @@ switch (action.type) {
     const existing = state.items.find(
         item => item.id === action.payload.id
     );
-
+    
     if (existing) {
         return {
-        ...state,
-        items: state.items.map(item =>
-            item.id === action.payload.id
-            ? { ...item, qty: item.qty + 1 }
-            : item
-        )
+            ...state,
+            items: state.items.map(item =>
+                item.id === action.payload.id
+                ? { ...item, qty: item.qty + 1 }
+                : item
+            )
         };
     }
-
+    
     return {
         ...state,
         items: [...state.items, { ...action.payload, qty: 1 }]
