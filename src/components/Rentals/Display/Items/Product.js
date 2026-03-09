@@ -1,8 +1,10 @@
+import { Add } from './Add/Add'
 import style from './items.module.css'
-export const Product = () => {
+export const Product = ({item}) => {
     return (
         <div className={style.product}>
-            {/* relative nav */}
+            <h2>{item.name}</h2>
+            <Add item={item}/>
             {/* product title */}
             {/* product picture */}
             {/* product description */}
