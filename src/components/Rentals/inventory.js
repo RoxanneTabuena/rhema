@@ -1,3 +1,5 @@
+let id = 0
+
 const bassAmps = 
 `Aquilar DB751
 Aguilar Tone Hammer 500
@@ -182,41 +184,28 @@ Stanton ST-150 Turntables
 Rane TTM-57SL Mixers with Serato Scratch Live
 `
 
-const inventoryCat = (productList) => {
-    let products = productList.split('\n').map((p)=>{
+const inventoryCat = (productList, cat) => {
+    return productList.split('\n').filter((i)=>{
+        return i.length > 0
+    }).map((p)=>{
         let brand = p.split(' ')[0]
+        id ++
         return {
-            name: p, brand: brand
+            name: p, brand: brand, id:id, category:cat
         }
     })
-    return products
-}
-
-export const drumInventory = () => {
-    let drumInventory = {}
-    drumSets.split('\n\n').forEach((s)=>{
-        let pieces = s.split('\n')
-        if(pieces.length === 1) {
-            let title = pieces[0].replace('- ALL SIZES', '')
-            drumInventory[title] = ['ALL SIZES']
-        }else{
-            let title = pieces[0]
-            drumInventory[title] =  Array.from(pieces).slice(1)
-    }})
-    return drumInventory
 }
 
 export const inventory = {
-    'Bass Amps' : inventoryCat(bassAmps),
-    'Bass Cabinets' : inventoryCat(bassCabinets),
-    'Bass Combo Amps' : inventoryCat(bassComboAmps),
-    'Guitar Amps' : inventoryCat(guitarAmps),
-    'Guitar Cabinets' : inventoryCat(guitarCabinets),
-    'Electric Guitars' : inventoryCat(electricGuitars),
-    'Acoustic Guitars' : inventoryCat(acousticGuitars),
-    'Bass Guitars' : inventoryCat(bassGuitars),
-    'Keyboards/Synthesizers' : inventoryCat(keyboards),
-    'Vintage Keyboards' : inventoryCat(vintageKeyboards),
-
+    'Bass Amps' : inventoryCat(bassAmps, 'Bass Amps'),
+    'Bass Cabinets' : inventoryCat(bassCabinets, 'Bass Cabinets'),
+    'Bass Combo Amps' : inventoryCat(bassComboAmps, 'Bass Combo Amps'),
+    'Guitar Amps' : inventoryCat(guitarAmps, 'Guitar Amps'),
+    'Guitar Cabinets' : inventoryCat(guitarCabinets, 'Guitar Cabinets'),
+    'Electric Guitars' : inventoryCat(electricGuitars, 'Electric Guitars'),
+    'Acoustic Guitars' : inventoryCat(acousticGuitars, 'Acoustic Guitars'),
+    'Bass Guitars' : inventoryCat(bassGuitars, 'Bass Guitars'),
+    'Keyboards&Synthesizers' : inventoryCat(keyboards, 'Keyboards&Synthesizers'),
+    'Vintage Keyboards' : inventoryCat(vintageKeyboards, 'Vintage Keyboards'),
 }
 
