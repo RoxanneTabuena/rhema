@@ -79,12 +79,10 @@ export const Order = () => {
             <Alert active={alertActive} outcome={outcome} handleClose={handleClose}/>
             {/* consent, not a robot */}
             <ContactSec info={contactSec}/>
-            <h3>Rental Dates</h3>
+            <h3>Rental Details</h3>
             <Dates />
-            <Current/>
             <Checklist />
-            {/* current order */}
-            {/* add to order */}
+            <Current/>
             <h3>Send a Message</h3>
             <Dropdown id="type" onChange={setType} options={inquiries} value={type} label={"Topic"}/>
             <p>Message:</p>

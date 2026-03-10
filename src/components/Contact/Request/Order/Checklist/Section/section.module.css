@@ -1,11 +1,14 @@
 .section h4{
     display: flex;
     align-items: center;
-    
 }
 
 /* PHONE RULES */
-@media screen and ( max-width: 699px) {}
+@media screen and ( max-width: 699px) {
+    .section h4 {
+        font-size: 1em;
+    }
+}
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {}
