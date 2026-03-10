@@ -6,7 +6,11 @@ export const Current = () => {
     const [state, dispatch] = useContext(CartContext)
     return (
         <div className={style.current}>
-            <h3>Current Order</h3>
+            <h3>Your Request</h3>
+            <div>
+                <p>item</p>
+                <p>quantity</p>
+            </div>
             {state.items.map((i)=>{
                 return <Itemline key={i.id} id={i.id}/>
             })}
