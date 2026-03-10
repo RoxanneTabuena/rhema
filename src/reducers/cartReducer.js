@@ -40,11 +40,32 @@ switch (action.type) {
     };
 
     case "UPDATE_QTY":
+        console.log(action.payload)
     return {
         ...state,
         items: state.items.map(item =>
         item.id === action.payload.id
             ? { ...item, qty: action.payload.qty }
+            : item
+        )
+    };
+
+    case "INC_UP":
+    return {
+        ...state,
+        items: state.items.map(item =>
+        item.id === action.payload.id
+            ? { ...item, qty: item.qty+1 }
+            : item
+        )
+    };
+
+    case "INC_DOWN":
+    return {
+        ...state,
+        items: state.items.map(item =>
+        item.id === action.payload.id
+            ? { ...item, qty: item.qty-1 }
             : item
         )
     };
