@@ -8,7 +8,6 @@ export const Add = ({item}) => {
     const add = (item) => {
         const action = { type: 'ADD_ITEM', payload:item}
         dispatch(action)
-        console.log(state.items)
     }
 
     return (
