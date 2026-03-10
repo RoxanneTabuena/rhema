@@ -1,9 +1,22 @@
-.itemline{
-    display: flex
+div.itemline{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+div.name {
+    justify-content: flex-start;
 }
 
 /* PHONE RULES */
-@media screen and ( max-width: 699px) {}
+@media screen and ( max-width: 699px) {
+    .name {
+        flex: 3
+    }
+    .qty {
+        flex: 1
+    }
+
+}
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {}

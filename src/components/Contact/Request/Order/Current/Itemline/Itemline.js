@@ -11,11 +11,15 @@ export const Itemline = ({id}) => {
 
     return (
         <div className={style.itemline}>
-            <Remove item={item}/>
-            <p>{item.name}</p>
-            <Down item={item} />
-            <Qty item={item}/>
-            <Up item={item}/>
+            <div className={style.name}>
+                <Remove item={item}/>
+                <p>{item.name}</p>
+            </div>
+            <div className={style.qty}>
+                <Down item={item} />
+                <Qty item={item}/>
+                <Up item={item}/>
+            </div>
             
         </div>
     )
