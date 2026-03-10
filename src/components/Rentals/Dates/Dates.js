@@ -6,20 +6,20 @@ export const Dates = () => {
     const [ state, dispatch ] = useContext(CartContext)
     const {dates} = state
     
-    const setPickup = (value) => {
-        const action = { type: 'PICKUP', payload: value }
+    const setPickupDate = (value) => {
+        const action = { type: 'PICKUP_DATE', payload: value }
         dispatch(action)
     }
     
-    const setDropoff = (value) => {
-        const action = { type: 'DROPOFF', payload: value }
+    const setDropoffDate = (value) => {
+        const action = { type: 'DROPOFF_DATE', payload: value }
         dispatch(action)
     }
 
     return (
         <div className={style.dates}>
-            <Date id="pickup" onChange={setPickup} value={dates.pickup}/>
-            <Date id="dropoff" onChange={setDropoff} value={dates.dropoff}/>
+            <Date id="pickup" onChange={setPickupDate} value={dates.pickup}/>
+            <Date id="dropoff" onChange={setDropoffDate} value={dates.dropoff}/>
         </div>
     )
 }

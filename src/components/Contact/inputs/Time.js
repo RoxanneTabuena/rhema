@@ -9,6 +9,8 @@ export const Time = ({id, onChange, value}) => {
             <input 
                 type="time" 
                 id={id} 
+                min="08:30"
+                max="17:00"
                 name={id}
                 value = {value}
                 placeholder={id}

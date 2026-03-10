@@ -6,6 +6,9 @@ div.itemline{
 div.name {
     justify-content: flex-start;
 }
+input.edit {
+    width: 2em;
+}
 
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {

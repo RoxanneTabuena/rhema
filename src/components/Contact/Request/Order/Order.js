@@ -1,3 +1,4 @@
+import { Times } from './Times/Times'
 import { Dates } from '../../../Rentals/Dates/Dates'
 import { ContactSec } from '../../Contact/ContactSec'
 import { Current } from './Current/Current'
@@ -81,6 +82,7 @@ export const Order = () => {
             <ContactSec info={contactSec}/>
             <h3>Rental Details</h3>
             <Dates />
+            <Times />
             <Checklist />
             <Current/>
             <h3>Send a Message</h3>

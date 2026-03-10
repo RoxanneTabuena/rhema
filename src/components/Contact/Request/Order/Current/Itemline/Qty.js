@@ -15,6 +15,7 @@ export const Qty = ({item}) => {
 
     // show input on qty click
     const change =( <input 
+                        className={style.edit}
                         type="number" 
                         value={item.qty} 
                         onChange={(e)=>{update(e.target.value)}}

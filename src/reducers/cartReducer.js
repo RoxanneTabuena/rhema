@@ -3,6 +3,10 @@ export const initialCartState = {
     dates: {
         pickup: '2026-03-24',
         dropoff: '2026-03-24'
+    },
+    times: {
+        pickup: '',
+        dropoff: ''
     }
     };
 
@@ -69,7 +73,7 @@ switch (action.type) {
         )
     };
 
-    case "PICKUP":
+    case "PICKUP_DATE":
     return {
         ...state,
         dates: {...state.dates,
@@ -77,10 +81,27 @@ switch (action.type) {
         }
     };
 
-    case "DROPOFF":
+    case "DROPOFF_DATE":
     return {
         ...state,
         dates: {...state.dates,
+            dropoff: action.payload
+        }
+    };
+
+    case "PICKUP_TIME":
+        console.log('pickup')
+    return {
+        ...state,
+        times: {...state.times,
+            pickup: action.payload
+        }
+    };
+
+    case "DROPOFF_TIME":
+    return {
+        ...state,
+        times: {...state.times,
             dropoff: action.payload
         }
     };
