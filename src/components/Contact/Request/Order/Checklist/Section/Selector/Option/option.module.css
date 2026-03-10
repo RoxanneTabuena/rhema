@@ -1,5 +1,7 @@
-.selector{
-    margin-left: 2em;
+.option div{
+    display: flex;
+    align-items: center;
+    
 }
 
 /* PHONE RULES */

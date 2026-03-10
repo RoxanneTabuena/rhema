@@ -5,7 +5,7 @@ export const Checklist = () => {
 
     return (
         <div className={style.checklist}>
-            {Object.keys(inventory).map((s,i)=>{
+            {Object.keys(inventory).map((s)=>{
                 return <Section key={s} title={s} category={inventory[s]}/>
             })}
         </div>

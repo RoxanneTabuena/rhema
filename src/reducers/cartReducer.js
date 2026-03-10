@@ -10,6 +10,8 @@ export function cartReducer(state, action) {
 switch (action.type) {
 
     case "ADD_ITEM": {
+    console.log('add', action.payload)
+
     const existing = state.items.find(
         item => item.id === action.payload.id
     );
@@ -32,6 +34,7 @@ switch (action.type) {
     }
 
     case "REMOVE_ITEM":
+    console.log('remove', action.payload)
     return {
         ...state,
         items: state.items.filter(

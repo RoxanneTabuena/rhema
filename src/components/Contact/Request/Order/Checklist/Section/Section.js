@@ -13,7 +13,7 @@ export const Section = ({category, title}) => {
                 <input type="checkbox" checked={open} onChange={()=>{setOpen(!open)}}></input>
                 <p>{title}</p>
             </h4>
-            { open && <Selector/>}
+            { open && <Selector title={title} category={category}/>}
         </div>
     )
 }
