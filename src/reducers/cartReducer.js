@@ -40,7 +40,6 @@ switch (action.type) {
     };
 
     case "UPDATE_QTY":
-        console.log(action.payload)
     return {
         ...state,
         items: state.items.map(item =>
