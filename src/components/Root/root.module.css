@@ -39,18 +39,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'branding';
 }
 
+
 body{
     font-family: tahoma;
-}
-
-header {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: flex-end;
-    z-index: 10;
-    position: relative;
-    background-color: transparent;
 }
 
 main{
@@ -66,8 +57,9 @@ main{
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
     header{
-        min-height: 10vh;
-    }
+            min-height: 10vh;
+        }
+
     main{
         min-height: 90vh;
         max-height: 90vh;
@@ -82,25 +74,22 @@ main{
     font-size: 16pt;
     }
 
-    .logo {
-    font-size: 2em;
-    text-shadow: 3px 3px blueviolet;
-    }
-
 }
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {
     header{
-        min-height: 12vh;
-        
+        min-height: 12vh;   
     }
+
     main{
         min-height: 88vh;
     }
+
     main>*, header>* {
         min-height: 100%;
     }
+
     footer{
         min-height: 10vh;
     }
@@ -109,10 +98,6 @@ main{
     font-size: 32pt;
     }
 
-    .logo {
-    font-size: 5em;
-    text-shadow: 8px 8px blueviolet;
-    }
 }
 
 /* resets */

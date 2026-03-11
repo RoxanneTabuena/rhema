@@ -1,0 +1,28 @@
+.head {
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 10;
+    position: relative;
+    background-color: transparent;
+}
+
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    .logo {
+        font-size: 2em;
+        text-shadow: 3px 3px blueviolet;
+        }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+
+.logo {
+    font-size: 5em;
+    text-shadow: 8px 8px blueviolet;
+    }
+}
