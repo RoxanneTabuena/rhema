@@ -2,8 +2,18 @@
     background-color: black;
 }
 
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 /* PHONE RULES */
-@media screen and ( max-width: 699px) {}
+@media screen and ( max-width: 699px) {
+    .icon {
+        height: 2rem;
+    }
+}
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {}

@@ -32,13 +32,13 @@ export const Nav = () => {
 
     // icons
     const openIcon = 
-        <img src={'https://imagehostclub.s3.us-west-1.amazonaws.com/rhema/Menu_Icon.png'} alt="menu icon"></img>
+        <img src={'https://imagehostclub.s3.us-west-1.amazonaws.com/rhema/Menu_Icon.png'} alt="menu icon" className={style.icon}></img>
     const closeIcon = 
-        <img src={'https://imagehostclub.s3.us-west-1.amazonaws.com/rhema/Close_Icon.png'} alt="close icon"></img>
+        <img src={'https://imagehostclub.s3.us-west-1.amazonaws.com/rhema/Close_Icon.png'} alt="close icon" className={style.icon}></img>
     
     return (
         // if menu is open close on click / vice versa
-        <div onClick={menuState.open ? ()=>{close()} : ()=>{open()}} className={style.icon} >
+        <div onClick={menuState.open ? ()=>{close()} : ()=>{open()}} className={style.nav} >
             {/* if menu is open show close icon / vice versa */}
             {menuState.open === true ? closeIcon : openIcon}
         </div>
