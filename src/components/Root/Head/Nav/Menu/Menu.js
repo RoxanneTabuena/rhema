@@ -1,7 +1,7 @@
 import { Group } from './Group/Group'
 import { Line } from './Group/Line/Line'
 import { siteMap } from '../sitemap'
-import { MenuIcon } from './MenuIcon'
+import { Nav } from './Nav'
 import style from './menu.module.css'
 
 export const Menu = () => {
@@ -33,7 +33,7 @@ export const Menu = () => {
             {Object.entries(siteMap).map(([key, node]) =>
                 renderNode(node, key)
             )}
-            <MenuIcon />
+            <Nav />
         </div>
     )
 }

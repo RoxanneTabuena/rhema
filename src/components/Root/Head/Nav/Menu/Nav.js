@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom'
 import { MenuContext } from '../../../../../context/MenuContext'
 import style from './menu.module.css'
 
-export const MenuIcon = () => {
+export const Nav = () => {
     // connect to menu context
     const [ menuState, menuDispatch] = useContext(MenuContext)
     // get current pathname
