@@ -23,7 +23,6 @@ export const Nav = () => {
 
     // close menu on pathchange
     useEffect(()=>{
-        console.log('pathchange')
         if(path !== pathname){
             close()
             setPath(pathname)

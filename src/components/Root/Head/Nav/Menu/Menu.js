@@ -6,6 +6,7 @@ import style from './menu.module.css'
 
 export const Menu = () => {
     const renderNode = (node, key) => {
+        console.log( node, key)
 
         // node has children → render a group
         if (node.children) {

@@ -6,7 +6,6 @@ export function menuReducer(state, action) {
 switch (action.type) {
 
     case "CLOSE": {
-        console.log('close')
     return {
         ...state,
         open: false
@@ -14,7 +13,6 @@ switch (action.type) {
     }
 
     case "OPEN":
-        console.log('open')
     return {
         ...state,
         open: true
