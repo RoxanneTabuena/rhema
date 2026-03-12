@@ -8,10 +8,17 @@
     right: 0;
 }
 
+.group, .single{
+    position:relative;
+}
+
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
     .icon {
         height: 2rem;
+    }
+    .group {
+        left: 1em;
     }
 }
 
