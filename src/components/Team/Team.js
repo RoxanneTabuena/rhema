@@ -1,5 +1,5 @@
-import style from './ourExperts.module.css'
-export const OurExperts = () => {
+import style from './team.module.css'
+export const Team = () => {
     return (<div>
         <h1 className = {style.logo} >Rhema Services</h1>
         <h2>"Hawaii's Industry Choice for Audio"</h2>

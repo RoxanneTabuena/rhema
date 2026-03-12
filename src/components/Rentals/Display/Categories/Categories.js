@@ -1,5 +1,5 @@
 import { Category } from './Category'
-import { inventory } from '../../inventory'
+import { inventory } from '../../inventoryInfo'
 import style from './categories.module.css'
 export const Categories = () => {
     return (

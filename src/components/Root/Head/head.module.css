@@ -9,6 +9,10 @@
     background-color: transparent;
 }
 
+.logo {
+    color: white;
+    font-family: 'branding';
+}
 
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {

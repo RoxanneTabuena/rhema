@@ -1,6 +1,6 @@
 import { useParams, useNavigate} from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import { inventory } from '../inventory'
+import { inventory } from '../inventoryInfo'
 import { Items } from './Items/Items'
 import { Brands } from './Brands/Brands'
 import { Categories } from './Categories/Categories'
