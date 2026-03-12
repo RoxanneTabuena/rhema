@@ -1,14 +1,14 @@
 import { Times } from './Times/Times'
-import { Dates } from '../../../Rentals/Dates/Dates'
-import { ContactSec } from '../../Contact/ContactSec'
+import { Dates } from '../../../../Rentals/Dates/Dates'
+import { ContactSec } from '../../../Contact/ContactSec'
 import { Current } from './Current/Current'
 import { Checklist } from './Checklist/Checklist'
-import { Dropdown } from '../../inputs/Dropdown'
-import { TextBox } from '../../inputs/TextBox'
-import { Submit } from '../../../Submit/Submit'
+import { Dropdown } from '../../../inputs/Dropdown'
+import { TextBox } from '../../../inputs/TextBox'
+import { Submit } from '../../../../Submit/Submit'
 import { useState } from 'react'
-import { Alert } from '../../Alert'
-import { service_id, template_id, public_key } from "../../keys"
+import { Alert } from '../../../Alert'
+import { service_id, template_id, public_key } from "../../../keys"
 import emailjs from 'emailjs-com'
 import style from './order.module.css'
 

@@ -1,6 +1,6 @@
-import { Time } from '../../../inputs/Time'
+import { Time } from '../../../../inputs/Time'
 import { useContext } from 'react'
-import { CartContext } from '../../../../../context/CartContext'
+import { CartContext } from '../../../../../../context/CartContext'
 export const Times = () => {
     const [ state, dispatch ] = useContext(CartContext)
     const {times} = state

@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react'
-import { CartContext } from '../../../../../../context/CartContext'
+import { CartContext } from '../../../../../../../context/CartContext'
 import style from './itemline.module.css'
 export const Qty = ({item}) => {
     const [edit, setEdit] = useState(false)

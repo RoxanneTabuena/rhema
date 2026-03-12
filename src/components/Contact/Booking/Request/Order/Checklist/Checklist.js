@@ -1,5 +1,5 @@
 import { Section } from './Section/Section'
-import { inventory } from '../../../../Rentals/inventoryInfo'
+import { inventory } from '../../../../../Rentals/inventoryInfo'
 import style from './checklist.module.css'
 export const Checklist = () => {
 

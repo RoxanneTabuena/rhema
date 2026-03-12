@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react'
-import { CartContext } from '../../../../../../../../context/CartContext'
+import { CartContext } from '../../../../../../../../../context/CartContext'
 import style from './option.module.css'
 export const Option = ({item}) => {
     const [state, dispatch] = useContext(CartContext)

@@ -1,6 +1,6 @@
 import { Itemline } from './Itemline/Itemline'
 import { useContext } from 'react'
-import { CartContext } from '../../../../../context/CartContext'
+import { CartContext } from '../../../../../../context/CartContext'
 import style from './current.module.css'
 export const Current = () => {
     const [state, dispatch] = useContext(CartContext)

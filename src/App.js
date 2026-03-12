@@ -1,19 +1,29 @@
 import { Root } from './components/Root/Root'
-import { Home } from './components/Home/Home';
+// about tree
 import { About } from './components/About/About';
-import { LiveSound } from './components/LiveSound/LiveSound';
-import { Services } from './components/Services/Services';
-import { Service } from './components/Services/Service/Service';
+import { Home } from './components/Home/Home';
+import { Lacoustics } from './components/About/Lacoustics/Lacoustics';
+// team tree
+import { Team } from './components/Team/Team';
+import { Careers } from './components/Team/Careers/Careers'
+import { JoinRhema } from './components/Team/JoinRhema/JoinRhema';
+// live sound tree
+import { Livesound } from './components/Livesound/Livesound';
+import { Events } from './components/Livesound/Events/Events'
+import { Event } from './components/Livesound/Events/Event/Event'
+// backline tree
 import { Rentals} from './components/Rentals/Rentals';
-import { OurExperts } from './components/OurExperts/OurExperts';
-import { Expert } from './components/OurExperts/Expert/Expert';
+import { Inventory } from './components/Rentals/Inventory';
+// booking tree
+import { Booking } from './components/Contact/Booking/Booking';
+import { BookLiveSound } from './components/Contact/Booking/Livesound/BookLiveSound';
+import { Request } from './components/Contact/Booking/Request/Request'
+// contact tree
 import { Contact } from './components/Contact/Contact';
-import { JoinRhema } from './components/Contact/JoinRhema/JoinRhema';
-import { Booking } from './components/Booking/Booking';
-import { BookLiveSound } from './components/Contact/BookLiveSound/BookLiveSound';
-import { Request } from './components/Contact/Request/Request'
 import { GeneralInquiry } from './components/Contact/GeneralInquiry/GeneralInquiry';
+// router 
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+// cart
 import { useReducer } from "react";
 import { CartContext } from './context/CartContext';
 import { cartReducer, initialCartState } from "./reducers/cartReducer";
@@ -25,21 +35,22 @@ function App() {
     <Route path="/" element={<Root/>}>
       <Route index element= { <Home />}/>
       <Route path='about' element= { <About />}/>
-      <Route path='liveSound' element= { <LiveSound />}/>
-      <Route path='services' element= { <Services />}/>
-      <Route path='services/:service' element= { <Service />}/>
-      <Route path='rentals' element= { <Rentals />}/>
-      <Route path='rentals/:category' element= { <Rentals />}/>
-      <Route path='rentals/:category/:brand' element= { <Rentals />}/>
-      <Route path='rentals/:category/:brand/:product' element= { <Rentals />}/>
-      <Route path='services' element= { <Services />}/>
-      <Route path='ourExperts' element= { <OurExperts />}/>
-      <Route path='ourExperts/:expert' element= { <Expert />}/>
-      <Route path='contact' element= { <Contact />}/>
+      <Route path='lacoustics' element={<Lacoustics/>}/>
+      <Route path='ourExperts' element={<Team/>}/>
+      <Route path='purpleShirts' element={<Careers/>}/>
       <Route path='joinRhema' element= { <JoinRhema />}/>
+      <Route path='livesound' element= { <Livesound />}/>
+      <Route path='events' element={<Events />}/>
+      <Route path='events/:event' element={<Event />}/>
+      <Route path='rentals' element= { <Rentals />}/>
+      <Route path='inventory' element= { <Inventory />}/>
+      <Route path='inventory/:category' element= { <Inventory />}/>
+      <Route path='inventory/:category/:brand' element= { <Inventory />}/>
+      <Route path='inventory/:category/:brand/:product' element= { <Inventory />}/>
       <Route path='booking' element= { <Booking />}/>
       <Route path='bookLiveSound' element= { <BookLiveSound />}/>
       <Route path='rentalRequest' element= { <Request />}/>
+      <Route path='contact' element= { <Contact />}/>
       <Route path='generalInquiry' element= { <GeneralInquiry />}/>
 
     </Route>

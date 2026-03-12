@@ -1,6 +1,6 @@
 import { Selector } from './Selector/Selector'
 import { useContext, useState } from 'react'
-import { CartContext } from '../../../../../../context/CartContext'
+import { CartContext } from '../../../../../../../context/CartContext'
 import style from './section.module.css'
 export const Section = ({category, title}) => {
     const [state, dispatch] = useContext(CartContext)

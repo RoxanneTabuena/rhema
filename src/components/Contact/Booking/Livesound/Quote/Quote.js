@@ -1,14 +1,14 @@
-import { ContactSec } from '../../Contact/ContactSec'
-import { Time } from '../../inputs/Time'
-import { Date } from '../../inputs/Date'
-import { Text } from '../../inputs/Text'
-import { Dropdown } from '../../inputs/Dropdown'
-import { TextBox } from '../../inputs/TextBox'
-import { CheckExpand } from '../../inputs/CheckExpand'
+import { ContactSec } from '../../../Contact/ContactSec'
+import { Time } from '../../../inputs/Time'
+import { Date } from '../../../inputs/Date'
+import { Text } from '../../../inputs/Text'
+import { Dropdown } from '../../../inputs/Dropdown'
+import { TextBox } from '../../../inputs/TextBox'
+import { CheckExpand } from '../../../inputs/CheckExpand'
 import { useState } from 'react'
 import style from './quote.module.css'
-import { Alert } from '../../Alert'
-import { service_id, template_id, public_key } from "../../keys"
+import { Alert } from '../../../Alert'
+import { service_id, template_id, public_key } from "../../../keys"
 import emailjs from 'emailjs-com'
 
 export const Quote = () => {
