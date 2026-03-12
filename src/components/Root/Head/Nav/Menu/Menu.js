@@ -1,10 +1,10 @@
 import { Group } from './Group/Group'
 import { Line } from './Group/Line/Line'
 import { siteMap } from '../sitemap'
+import { MenuIcon } from './MenuIcon'
 import style from './menu.module.css'
 
 export const Menu = () => {
-
     const renderNode = (node, key) => {
 
         // node has children → render a group
@@ -33,6 +33,7 @@ export const Menu = () => {
             {Object.entries(siteMap).map(([key, node]) =>
                 renderNode(node, key)
             )}
+            <MenuIcon />
         </div>
     )
 }

@@ -27,6 +27,9 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import { useReducer } from "react";
 import { CartContext } from './context/CartContext';
 import { cartReducer, initialCartState } from "./reducers/cartReducer";
+// menu
+import { MenuContext } from './context/MenuContext';
+import { menuReducer, initialMenuState } from "./reducers/menuReducer";
 import './App.css';
 
 function App() {
@@ -55,11 +58,14 @@ function App() {
 
     </Route>
   ))
-  const [ state, dispatch ] = useReducer( cartReducer, initialCartState)
+  const [ cartState, cartDispatch ] = useReducer( cartReducer, initialCartState)
+  const [ menuState, menuDispatch ] = useReducer( menuReducer, initialMenuState)
   return (
-    <CartContext.Provider value={[state, dispatch]}>
-      <RouterProvider router={router}/>
-    </CartContext.Provider>
+    <MenuContext.Provider value={[menuState, menuDispatch]}>
+      <CartContext.Provider value={[cartState, cartDispatch]}>
+        <RouterProvider router={router}/>
+      </CartContext.Provider>
+    </MenuContext.Provider>
   );
 }
 
