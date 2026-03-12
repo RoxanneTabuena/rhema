@@ -1,3 +1,4 @@
+import { Menu } from "./Menu/Menu"
 import { useState, useEffect } from "react"
 import { useLocation } from "react-router-dom"
 import { NavLink } from "react-router-dom"
@@ -17,22 +18,7 @@ export const Nav = () => {
 
     const expand = (
         <div className={style.menu}>
-            <div>
-                <NavLink to="/about">
-                    <h2>About</h2>
-                </NavLink>
-                <NavLink to="/services">
-                    <h2>Services</h2>
-                </NavLink>
-            </div>
-            <div>
-                <NavLink to="/pricing">
-                    <h2>Pricing</h2>
-                </NavLink>
-                <NavLink to="/work">
-                    <h2>Work</h2>
-                </NavLink>
-            </div>
+            <Menu/>
             <MenuIcon open={true} handleMenuToggle={handleMenuToggle}/>
         </div>
     )

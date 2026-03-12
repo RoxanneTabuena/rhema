@@ -1,4 +1,4 @@
-import { Line } from './Line/line'
+import { Line } from './Line/Line'
 import style from './group.module.css'
 export const Group = ({children}) => {
 
