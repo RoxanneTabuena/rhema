@@ -32,15 +32,22 @@
    populate checklist and add add/remove function 1021-1110
    style cur 1110 - 11:44
    add pickup - dropoff times 1144 -1201
-
-   To Do:
    3/11
    root 1h 3:29 - 
    connect head 334-346
    adjust nave to rhema sitemap 350-
    create new site map 350 - 425
    adjust components to new map 425 - 508
-   adjust routes to new components 508 - 
+   adjust routes to new components 508 - 544
+   menu architecture 544 - 559
+   move menu up to context level 8:44 - 943
+   breakdown menu rendering logic 951-1134
+   attempt collapsible version 1134-1155
+
+   To Do:
+   3/13
+   collapsible version 
+   page style overhaul
 
 
 
