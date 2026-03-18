@@ -1,54 +1,58 @@
 export const siteMap = {
-    "About" : {
-        link: '/about',
+
+    "About": {
+        link: "/about",
         children: {
-                'Operations and Legacy' : '/about',
-                'lacoustics' : '/lacoustics',
-                'Promotions' : '/',
-                'Our Team' : {
-                link: '/ourExperts',
-                children: {
-                    'Team Directory' : '/ourExperts',
-                    'Careers' : '/purpleShirts',
-                }},}
+        "Operations and Legacy": { link: "/about" },
+        "L'acoustics": { link: "/lacoustics" },
+        "Promotions": { link: "/" },
+        "Our Team": {
+            link: "/ourExperts",
+            children: {
+            "Team Directory": { link: "/ourExperts" },
+            "Careers": { link: "/purpleShirts" }
+            }
+        }
+        }
+    },
+    "Live Sound Services": {
+        link: "/livesound",
+        children: {
+        "Info & Pricing": { link: "/livesound" },
+        "Event Types": {
+            link: "/events",
+            children: {
+            "Headliners": { link: "/events/headliners" },
+            "Corporate": { link: "/events/corporate" },
+            "Weddings": { link: "/events/weddings" },
+            "Conventions": { link: "/events/conventions" },
+            "Contests": { link: "/events/contests" }
+            }
         },
-    "Live Sound Services" : {
-        link: '/livesound',
-        children: {
-            'Info & Pricing' : '/livesound',
-            'Event Types' : {
-                link : '/events',
-                children: {
-                    'Headliners ':'/events/headliners',
-                    'Corprate' : '/events/corporate',
-                    'Weddings' : '/events/weddings',
-                    'Conventions' : 'events/conventions',
-                    'Contests' : 'events/contests'
-                }},
-            'Request a Quote' : '/bookLiveSound'
+        "Request a Quote": { link: "/bookLiveSound" }
         }
     },
-    "Backline Rentals" : {
-        link : '/rentals',
+    "Backline Rentals": {
+        link: "/rentals",
         children: {
-            'Rental Protocol' : '/rentals',
-            'Inventory' : '/inventory',
-            'Start a Reservation' : '/rentalRequest'
+        "Rental Protocol": { link: "/rentals" },
+        "Inventory": { link: "/inventory" },
+        "Start a Reservation": { link: "/rentalRequest" }
         }
     },
-    'Booking' : {
-        link : '/booking',
+    "Booking": {
+        link: "/booking",
         children: {
-            'Live Sound' : '/bookLiveSound',
-            'Backline Rentals' : '/rentalRequest'
+        "Live Sound": { link: "/bookLiveSound" },
+        "Backline Rentals": { link: "/rentalRequest" }
         }
     },
-    'Contact' : {
-        link: '/contact',
+    "Contact": {
+        link: "/contact",
         children: {
-            'Event Support' : '/bookLiveSound',
-            'Rentals & Inventory' : '/rentalRequest',
-            'General Inquiries' : '/generalInquiry'
+        "Event Support": { link: "/bookLiveSound" },
+        "Rentals & Inventory": { link: "/rentalRequest" },
+        "General Inquiries": { link: "/generalInquiry" }
         }
     }
 }
