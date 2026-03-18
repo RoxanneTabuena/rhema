@@ -1,21 +1,26 @@
 import { useState } from 'react'
 import style from './group.module.css'
 import { Line } from './Line/Line'
-export const Group = ([key, value]) => {
-        // extract link and children from object
-        const { link, children } = value
+export const Group = ({ entry }) => {
+    const [key, value] = entry
+    const { link, children } = value
+    const [open, setOpen] = useState(false)
 
-        return (
-            <div key={key} >
-                {/* render title no matter what */}
-                <Line title={key} link={link} children={children}/>
-                {children &&
-                // add group styling when there are children present
+    return (
+        <div
+            onMouseEnter={() => setOpen(true)}
+            onClick={() => setOpen(true)}>
+            <Line title={key} link={link} />
+
+            {children && (
                 <div className={style.group}>
-                    {/* run the translator until an endpoint is found */}
-                    {Object.entries(children).map(Group)}
+                    {open &&
+                        Object.entries(children).map(([k, v]) => (
+                            <Group key={k} entry={[k, v]} />
+                        ))
+                    }
                 </div>
-                }
-            </div>
-        )
-    }
+            )}
+        </div>
+    )
+}

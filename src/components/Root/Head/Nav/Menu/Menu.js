@@ -7,7 +7,9 @@ export const Menu = () => {
 
     return (
         <div className={style.menu}>
-            {Object.entries(siteMap).map(Group)}
+            {Object.entries(siteMap).map(([k,v])=>{
+                return <Group key={k} entry={[k,v]}/>
+            })}
             <Nav />
         </div>
     )
