@@ -1,32 +1,39 @@
+import { Group } from './Group/Group'
 import { Line } from './Group/Line/Line'
 import { siteMap } from '../sitemap'
 import { Nav } from './Nav'
 import style from './menu.module.css'
 
 export const Menu = () => {
+    const renderNode = (node, key) => {
+        console.log( node, key)
 
-    const translate = ([key, value]) => {
-        // extract link and children from object
-        const { link, children } = value
+        // node has children → render a group
+        if (node.children) {
+            return (
+                <Group key={key}>
+                    {Object.entries(node.children).map(([k, child]) =>
+                        renderNode(child, k)
+                    )}
+                </Group>
+            )
+        }
 
+        // node is an endpoint → render a line
         return (
-            <div key={key} >
-                {/* render title no matter what */}
-                <Line title={key} link={link} children={children}/>
-                {children &&
-                // add group styling when there are children present
-                <div className={style.group}>
-                    {/* run the translator until an endpoint is found */}
-                    {Object.entries(children).map(translate)}
-                </div>
-                }
-            </div>
+            <Line
+                key={key}
+                title={key}
+                link={node.link}
+            />
         )
     }
 
     return (
         <div className={style.menu}>
-            {Object.entries(siteMap).map(translate)}
+            {Object.entries(siteMap).map(([key, node]) =>
+                renderNode(node, key)
+            )}
             <Nav />
         </div>
     )

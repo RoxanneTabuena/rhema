@@ -1,14 +1,12 @@
-import style from './group.module.css'
 import { Line } from './Line/Line'
-export const Group = ( {title, link, kids}   ) => {
+import style from './group.module.css'
+export const Group = ({children}) => {
+
     return (
         <div className={style.group}>
-            <Line title={title} link={link}/>
-            <div className={style.kids}>
-                {kids.map(([key, node])=>{
-                    return <Line key={key} title={key} link={node.link}/>
-                })}
-            </div>
+            { children.map((c)=>{
+                return <Line key={c.key} link={c.value} title={c.key}/>
+            })}
         </div>
     )
 }
