@@ -1,3 +1,4 @@
+import { Menu } from "../Head/Nav/Menu/Menu"
 import { FootNav } from "./FootNav/FootNav"
 import style from "./foot.module.css"
 export const Foot = () => {
@@ -12,7 +13,7 @@ export const Foot = () => {
         <div>
             {title}
             <p>© Rhema Services 2026</p>
-            <FootNav/>
+            <Menu expand={true}/>
         </div>
     )
 }
