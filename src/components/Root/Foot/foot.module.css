@@ -1,16 +1,82 @@
+.foot * {
+    background-color: white;
+    color: black;
+}
+
 .title{
     display: flex;
     align-items: baseline;
-    width: fit-content;
 }
 .title>*{
+    color: blueviolet;
+    font-family: 'branding';
     height: 32px;
     font-size: 2em;
 }
 
+.address, .phone {
+    text-align: center;
+}
 
+.foot h2 {
+    font-family: 'titles';
+    color: blueviolet;
+}
+.condensed {
+    display: flex;
+    justify-content: space-around;
+}
+.copy {
+    text-align: center;
+}
+.title {
+    justify-content: center;
+    width: 100%;
+
+}
 /* PHONE RULES */
-@media screen and ( max-width: 699px) {}
+@media screen and ( max-width: 699px) {
+    .info > * {
+        margin: 1em 0;
+    }
+
+
+    .title {
+        text-shadow: 2px 2px black;
+    }
+    
+    
+    .foot h2 {
+        font-size: 1.5em;
+    }
+}
 
 /* DESK RULES */
-@media screen and ( min-width: 700px) {}
+@media screen and ( min-width: 700px) {
+    .title {
+        text-shadow: 3px 3px black;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+    }
+
+    .condensed {
+        flex: 2
+    }
+
+    .map {
+        flex: 1;
+    }
+
+    .foot h2{
+        font-size: 2em;
+    }
+
+    .foot {
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

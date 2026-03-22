@@ -1,19 +1,20 @@
-import { Menu } from "../Head/Nav/Menu/Menu"
-import { FootNav } from "./FootNav/FootNav"
+import { Map } from './Map'
+import { Phone } from './Phone'
+import { Address } from './Address'
+import { Copy } from './Copy'
 import style from "./foot.module.css"
 export const Foot = () => {
-    const title = (
-        <div className={style.title}>
-            <img src="https://imagehostclub.s3.us-west-1.amazonaws.com/rhema/Rhema_logo_3d.png" alt="rhema logo">
-            </img>
-            <h3>Rhema Services</h3>
-        </div>
-    )
+
     return ( 
-        <div>
-            {title}
-            <p>© Rhema Services 2026</p>
-            <Menu expand={true}/>
+        <div className={style.foot}>
+            <Copy />
+            <div className={style.info}>
+                <div className={style.condensed}>
+                    <Phone />
+                    <Address/>
+                </div>
+                <Map/>
+            </div>
         </div>
     )
 }
