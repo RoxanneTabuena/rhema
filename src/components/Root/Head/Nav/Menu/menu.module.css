@@ -30,4 +30,8 @@
     .icon {
         height: 5em;
     }
+
+    .menu {
+        width: fit-content;
+    }
 }

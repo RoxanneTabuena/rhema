@@ -9,6 +9,10 @@
     background-color: transparent;
 }
 
+.head a {
+    text-decoration: none;
+}
+
 .logo {
     color: white;
     font-family: 'branding';
