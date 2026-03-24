@@ -1,0 +1,26 @@
+.counter, .peek{
+    color: white;
+}
+
+.peek{
+    position: absolute;
+    top: 1;
+    right: 1;
+    z-index: 200;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+        .counter{
+        margin-right: 2.5em;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+        .counter{
+        margin-right: 5.5em;
+    }
+}

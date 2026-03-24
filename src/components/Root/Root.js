@@ -2,6 +2,7 @@ import { useState, useEffect, useContext} from 'react'
 import { Outlet, useLocation } from "react-router-dom"
 import style from "./root.module.css"
 import { Home } from "../Home/Home"
+import { Peek } from './Head/Peek/Peek'
 import { Foot } from './Foot/Foot'
 import { Head } from "./Head/Head"
 import { Menu } from './Head/Nav/Menu/Menu'
@@ -11,6 +12,8 @@ export const Root = () => {
     const [display, setDisplay] = useState('reg')
     // get menu context
     const [menuState, menuDispatch] = useContext(MenuContext)
+    // control rental preview
+    const [ peek, setPeek ] = useState(false)
     const menuOpen = menuState.open
     // get pathname
     const {pathname} = useLocation()
@@ -20,7 +23,7 @@ export const Root = () => {
         'reg' : (
             <div className={style.body}>
                 <header>
-                    <Head />
+                    <Head togPeek={()=>setPeek(!peek)}/>
                 </header>
                 <main>
                     <Outlet />  
@@ -46,6 +49,7 @@ export const Root = () => {
 
     return (
         <div>
+            {peek && <Peek close={()=>setPeek(false)}/>}
             {displays[display]}
         </div>
     )
