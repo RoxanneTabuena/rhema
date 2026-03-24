@@ -3,6 +3,11 @@
     justify-content: space-around;
 }
 
+.current h3 {
+    font-family: 'highlights';
+    color: blueviolet;
+}
+
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {}
 

@@ -9,21 +9,50 @@
     z-index: 200;
     min-width: 100%;
     min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .window{
-    width: min-content
+    color: black;
+    background-color: white;
+    width: fit-content;
+}
+
+.window > button {
+    font-family: 'highlights';    
+    text-align: right;
+    width: 100%;
+    color: blueviolet;
 }
 
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
-        .counter{
+    .counter{
         margin-right: 2.5em;
+    }
+    .window{
+        border-radius: 1em;
+        box-shadow: 4px 4px blueviolet;
+        padding: 0 .5em;
+        border: solid blueviolet 4px;
     }
 }
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {
+    .window{
+        border-radius: 1em;
+        box-shadow: 8px 8px blueviolet;
+        padding: 1em 1.5em;
+        border: solid blueviolet 8px;
+    }
+
+    .window>button{
+        font-size: 1.5em;
+    }
+
         .counter{
         margin-right: 5.5em;
     }

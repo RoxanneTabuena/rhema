@@ -10,7 +10,9 @@ export const Peek = ({close}) => {
         <div className={style.peek} onClick={(e)=>{viewCheck(e.target)}}>
             <div className={style.window}>
                 <button onClick={close}x>x</button>
-                <Current/>
+                <div>
+                    <Current/>
+                </div>
             </div>
         </div>
     )
