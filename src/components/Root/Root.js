@@ -47,6 +47,10 @@ export const Root = () => {
         )
     }, [menuOpen, pathname])
 
+    useEffect(()=>{
+        setPeek(false)
+    },[pathname])
+
     return (
         <div>
             {peek && <Peek close={()=>setPeek(false)}/>}

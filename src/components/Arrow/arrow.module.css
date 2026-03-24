@@ -1,0 +1,46 @@
+.arrow {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.arrow > p {
+    font-family: 'highlights';
+    position: absolute; 
+}
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    .arrow{
+        top:3em;
+        right: -2em;
+    }
+    
+    .arrow img, .arrow {
+        height: 3em;
+    }
+    
+    .arrow p {
+        right: 1.5em;
+        top: 16px;
+        font-size: 1em;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .arrow{
+        top:5.5em;
+        right: -3.5em;
+    }
+
+    .arrow img, .arrow {
+        height: 5em;
+    }
+
+    .arrow p {
+        right: 1.5em;
+        top: 1em;
+        font-size: 1.5em;
+    }
+}
