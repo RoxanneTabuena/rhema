@@ -11,6 +11,10 @@
     min-height: 100%;
 }
 
+.window{
+    width: min-content
+}
+
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
         .counter{
