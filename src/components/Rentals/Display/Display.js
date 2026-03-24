@@ -19,7 +19,7 @@ export const Display = () => {
         }else if(brand){
             setDisplay('items')
         }else if(category && inventory[category].length<6 ){
-            navigate(`/rentals/${category}/all`)
+            navigate(`/inventory/${category}/all`)
         }else if(category){
             setDisplay('brands')
         }else{

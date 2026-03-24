@@ -8,7 +8,7 @@ export const Relative = () => {
     return (
         <div>
             {
-            paths.at(-1) === 'all' ? <p onClick={()=>{navigate('/rentals')}}>rentals</p> :
+            paths.at(-1) === 'all' ? <p onClick={()=>{navigate('/inventory')}}>rentals</p> :
             paths.filter((p)=>{
                 return p!=='all'
             }).map((p,i)=>{
