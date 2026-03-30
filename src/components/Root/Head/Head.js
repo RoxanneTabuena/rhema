@@ -7,7 +7,6 @@ import { Nav } from './Nav/Menu/Nav'
 import style from './head.module.css'
 export const Head = ({togPeek}) => {
     const [ cartState, cartDispatch] =  useContext(CartContext)
-
     return (
         <div className={style.head}>
             <NavLink to="/">

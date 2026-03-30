@@ -13,7 +13,7 @@ export const Peek = ({close}) => {
                 <button onClick={close}x>x</button>
                 <div>
                     <Current/>
-                                        <Arrow color="purple" text="CHECKOUT" path="/rentalRequest" onClick={close}/>
+                    <Arrow color="purple" text="CHECKOUT" path="/rentalRequest" onClick={close}/>
                 </div>
             </div>
         </div>

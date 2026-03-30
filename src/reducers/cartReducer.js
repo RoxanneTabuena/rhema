@@ -64,14 +64,21 @@ switch (action.type) {
     };
 
     case "INC_DOWN":
-    return {
-        ...state,
-        items: state.items.map(item =>
-        item.id === action.payload.id
-            ? { ...item, qty: item.qty-1 }
-            : item
-        )
-    };
+    if(action.payload.qty===1){
+        return {
+            ...state,
+            items: state.items.filter(
+            item => item.id !== action.payload.id
+            )
+        }}
+        return {
+            ...state,
+            items: state.items.map(item =>
+            item.id === action.payload.id
+                ? { ...item, qty: item.qty-1 }
+                : item
+            )
+        };
 
     case "PICKUP_DATE":
     return {
