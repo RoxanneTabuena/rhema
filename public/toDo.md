@@ -43,13 +43,32 @@
    move menu up to context level 8:44 - 943
    breakdown menu rendering logic 951-1134
    attempt collapsible version 1134-1155
+   3/18
+   extract group 2-230
+   collapsible version 230-250
+   subsection margin 250-3
+   3/22
+   style menu 947 - 1001
+   link rhema to home 1005 - 1008
+   footer .5h 
+   add updated menu to footer 10:13 - 10:40
+   footer layout 10:44 - 11:23
+   3/24
+   Debug rentals .5h 1043-1052
+   Add cart preview function 1053-1147
+   Add Outside click toggle 1148-1156
+   style Preview 1157-12:20
+   add checkout arrow 12:21 - 1:08
+   hide counter on empty cart 1:09 - 1:19
 
    To Do:
-   3/13
-   collapsible version 
-   page style overhaul
+   3/30
+   adjust max width 821 - 825
+   hide counter on empty cart 
+   refresh counter when cart changes
+   style counter
 
-
+   style rentals components 2h
 
 lacoustics
 
@@ -62,16 +81,7 @@ livesound
 -events
 -event
 
-rentals
-
-
-
    home . 5h
 
-
-
-   footer .5h
-
-   style rentals components 2h
    deploy .75h
    audio scroller 2h
