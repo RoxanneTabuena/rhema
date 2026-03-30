@@ -1,3 +1,13 @@
+.counter {
+    position: relative;
+}
+
+.count {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .hide {
     display: none;
 }
@@ -34,8 +44,17 @@
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
     .counter{
-        margin-right: 2.5em;
+        height: 2em;
+        margin-right: 2em;
+        max-width: 2.5em;
     }
+
+    .count {
+        font-size: 1em;
+        width: 1em;
+        font-family: 'branding';
+    }
+
     .window{
         border-radius: 1em;
         box-shadow: 4px 4px blueviolet;
