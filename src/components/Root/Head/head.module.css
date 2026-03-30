@@ -1,7 +1,7 @@
 .head {
     color: white;
     display: flex;
-    width: 100%;
+    max-width: 100%;
     justify-content: space-between;
     align-items: flex-end;
     z-index: 10;
