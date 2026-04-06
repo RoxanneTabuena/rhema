@@ -1,13 +1,86 @@
 .logo {
-    font-family: 'branding';
-    font-size: 2em;
-    width: 100%;
-    text-align: center;
-    text-shadow: 2px 2px blueviolet;
+    pointer-events: none;
 }
-h2{
-    color:blueviolet;
-    font-family: 'branding';
+
+.livesound {
+    position: relative;
+    max-height: 90vh;
+}
+
+.livesound>h1 {
+    font-family: 'Highlights';
     text-align: center;
-    font-size: 1em;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    color:blueviolet;
+    pointer-events: none;
+    z-index: 20;
+}
+
+.content {
+    position:relative;
+    min-height: 90vh;
+    overflow: scroll;
+}
+
+.livesound h3{
+    font-family: 'titles';
+    color: mediumslateblue;
+}
+
+.content h2{
+    font-family: 'highlights';
+}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+
+    .main {
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .content h2, h3,h4 {
+        font-size: 1.5em;
+    }
+
+    .livesound> h1{
+        font-size: 2em;
+    }
+    
+    .livesound{
+        top: -56px;
+    }
+
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .main {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: .5em 2em;
+    font-size: 1.5em;
+    }
+
+    .livesound {
+    padding-top: 3em;
+    }
+
+    .content h2{
+        font-size: 3em;
+    }
+    
+    h3, h4 {
+        font-size: 2.5em;
+    }
+    
+    .livesound> h1{
+        font-size: 5em;
+        top:-200px;
+    }
+
 }
