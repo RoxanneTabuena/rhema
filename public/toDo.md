@@ -60,28 +60,36 @@
    style Preview 1157-12:20
    add checkout arrow 12:21 - 1:08
    hide counter on empty cart 1:09 - 1:19
-
-   To Do:
    3/30
    adjust max width 821 - 825
-   hide counter on empty cart 
-   refresh counter when cart changes
-   style counter
+   signal empty cart on count=0 825-909
+   add cart icon 909 - 934
+   fix spacing on mobile 909 - 949
+   (its a loading issue please remember)
+   adjust nav icon margins 949 - 1002
+   desk icon sizing 1002 - 1008
 
+   To Do:
+   4/6
+   livesound 1015-1226
+   -events
+   link event pages 1226 - 1244
+   
+   -event
+
+   style peek window
    style rentals components 2h
 
-lacoustics
 
-team
-   -directory
-   -careers
-   join Rhema 1h
+   lacoustics
 
-livesound
--events
--event
+   team
+      -directory
+      -careers
+      join Rhema 1h
 
-   home . 5h
 
-   deploy .75h
-   audio scroller 2h
+      home . 5h
+
+      deploy .75h
+      audio scroller 2h

@@ -5,6 +5,7 @@
 .livesound {
     position: relative;
     max-height: 90vh;
+    overflow: scroll;
 }
 
 .livesound>h1 {
