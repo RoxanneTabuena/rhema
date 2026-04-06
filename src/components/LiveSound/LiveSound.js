@@ -4,6 +4,7 @@ import { Events } from './Events/Events'
 import { Service } from './Service'
 import { Premium } from './Premium'
 import { Crew } from './Crew'
+import { Booknow } from './Booknow/Booknow'
 export const Livesound = () => {
     return (
     <div className={style.livesound}>
@@ -15,6 +16,7 @@ export const Livesound = () => {
             <Crew/>
             <NavLink to="/ourExperts"></NavLink>
             <Events/>
+            <Booknow/>
         </div>
     </div>)
 } 

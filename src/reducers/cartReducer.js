@@ -1,5 +1,5 @@
 export const initialCartState = {
-    items: [{id:"420", name: "butt monkeys",brand:"ya mas", category:"Bass Amps" , qty:1}],
+    items: [],
     dates: {
         pickup: '2026-03-24',
         dropoff: '2026-03-24'
