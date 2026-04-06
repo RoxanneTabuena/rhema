@@ -33,8 +33,18 @@
     font-family: 'highlights';
 }
 
+.service > h3, .premium > h3, .crew > h3 {
+    text-transform: uppercase ;
+    font-style: italic;
+    text-align: left;
+}
+
+
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
+    .short, .long {
+        margin-left: 3em
+    }
 
     .main {
         font-weight: bold;

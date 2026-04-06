@@ -9,7 +9,7 @@ export const Livesound = () => {
     <div className={style.livesound}>
         <h1 className = {style.logo}>Live Sound</h1>
         <div className={style.content}>
-            <p className={style.main}>Hawaii's ONLY l'acoustics distributor</p>
+            <p className={style.main}>Hawaii's ONLY l'acoustics premium sound distributor</p>
             <Service />
             <Premium />
             <Crew/>
