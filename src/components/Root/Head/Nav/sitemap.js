@@ -4,7 +4,6 @@ export const siteMap = {
         link: "/about",
         children: {
         "Operations and Legacy": { link: "/about" },
-        "L'acoustics": { link: "/lacoustics" },
         "Promotions": { link: "/" },
         "Our Team": {
             link: "/ourExperts",
@@ -19,16 +18,11 @@ export const siteMap = {
         link: "/livesound",
         children: {
         "Info & Pricing": { link: "/livesound" },
-        "Event Types": {
-            link: "/events",
-            children: {
-            "Headliners": { link: "/events/headliners" },
-            "Corporate": { link: "/events/corporate" },
-            "Weddings": { link: "/events/weddings" },
-            "Conventions": { link: "/events/conventions" },
-            "Contests": { link: "/events/contests" }
-            }
-        },
+        "Headliners": { link: "/events/headliners" },
+        "Corporate": { link: "/events/corporate" },
+        "Weddings": { link: "/events/weddings" },
+        "Conventions": { link: "/events/conventions" },
+        "Contests": { link: "/events/contests" },
         "Request a Quote": { link: "/bookLiveSound" }
         }
     },

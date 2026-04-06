@@ -2,15 +2,13 @@ import { Root } from './components/Root/Root'
 // about tree
 import { About } from './components/About/About';
 import { Home } from './components/Home/Home';
-import { Lacoustics } from './components/About/Lacoustics/Lacoustics';
 // team tree
 import { Team } from './components/Team/Team';
 import { Careers } from './components/Team/Careers/Careers'
 import { JoinRhema } from './components/Team/JoinRhema/JoinRhema';
 // live sound tree
 import { Livesound } from './components/Livesound/Livesound';
-import { Events } from './components/Livesound/Events/Events'
-import { Event } from './components/Livesound/Events/Event/Event'
+import { Event } from './components/Livesound/Events/Event'
 // backline tree
 import { Rentals} from './components/Rentals/Rentals';
 import { Inventory } from './components/Rentals/Inventory';
@@ -38,12 +36,10 @@ function App() {
     <Route path="/" element={<Root/>}>
       <Route index element= { <Home />}/>
       <Route path='about' element= { <About />}/>
-      <Route path='lacoustics' element={<Lacoustics/>}/>
       <Route path='ourExperts' element={<Team/>}/>
       <Route path='purpleShirts' element={<Careers/>}/>
       <Route path='joinRhema' element= { <JoinRhema />}/>
       <Route path='livesound' element= { <Livesound />}/>
-      <Route path='events' element={<Events />}/>
       <Route path='events/:event' element={<Event />}/>
       <Route path='rentals' element= { <Rentals />}/>
       <Route path='inventory' element= { <Inventory />}/>
