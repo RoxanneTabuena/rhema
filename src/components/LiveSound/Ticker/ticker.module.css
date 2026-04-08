@@ -1,0 +1,115 @@
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    :root {
+        --font-size: 2rem;
+        --line-height: 1.2;
+        --num-words: 16; /* Be sure to include the extra word at the end in this count */
+        --animation-duration: 30s;
+    }
+
+    .slide{
+        margin-left: .5rem;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    :root {
+        --font-size: 8rem;
+        --line-height: 1.2;
+        --num-words: 16; /* Be sure to include the extra word at the end in this count */
+        --animation-duration: 30s;
+    }
+
+    .slide{
+        margin-left: 1.5rem;
+    }
+
+}
+
+.ticker {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    text-align: left;
+}
+
+h3.ticker{
+    color: white;
+}
+
+.window {
+    display: inline-block;
+    overflow: hidden;
+    flex-grow: 1; 
+    height: calc(var(--font-size) * var(--line-height));
+    vertical-align: bottom;
+}
+
+.slider {
+    display: inline-block;
+    animation: scroll-text var(--animation-duration) ease-in-out infinite;
+    color: var(--blue);
+}
+.slide {
+    text-align: left;
+    display: block;
+    font-size: var(--font-size);
+}
+
+
+@keyframes scroll-text {
+    /* first word */
+    0% {
+        transform: translateY(0%); 
+    }
+    6.25% {
+        transform: translateY(calc(-6.25%)); 
+    }
+    12.5% {
+        transform: translateY(calc(-12.5%)); 
+    }
+    18.75% {
+        transform: translateY(calc(-18.75%)); 
+    }
+    25% {
+        transform: translateY(calc(-25%)); 
+    }
+    31.25% {
+        transform: translateY(calc(-31.25%)); 
+    }
+    37.5% {
+        transform: translateY(calc(-37.5%)); 
+    }
+    43.75% {
+        transform: translateY(calc(-43.75%)); 
+    }
+    50% {
+        transform: translateY(calc(-50%)); 
+    }
+    56.25% {
+        transform: translateY(calc(-56.25%)); 
+    }
+    62.5% {
+        transform: translateY(calc(-62.5%)); 
+    }
+    68.75% {
+        transform: translateY(calc(-68.75%)); 
+    }
+    75% {
+        transform: translateY(calc(-75%)); 
+    }
+    81.25% {
+        transform: translateY(calc(-81.25%)); 
+    }
+    87.5% {
+        transform: translateY(calc(-87.5%)); 
+    }
+    /* last word (same as first)*/
+    93.75% {
+        transform: translateY(calc(-93.75%)); 
+    }
+    /* last word (same as first) */
+    100% {
+        transform: translateY(calc(-93.75%)); 
+    }
+}

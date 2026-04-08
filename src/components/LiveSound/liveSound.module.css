@@ -40,17 +40,19 @@
     text-align: left;
 }
 
+.main>h3{
+    color: white;
+}
+
 
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
-    .short, .long {
-        margin-left: 3em
+    .main > h3 {
+        text-align: center;
     }
 
-    .main {
-        font-weight: bold;
-        font-style: italic;
-        text-align: center;
+    .short, .long {
+        margin-left: 3em
     }
 
     .content h2, h3,h4 {
@@ -69,13 +71,6 @@
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {
-    .main {
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    padding: .5em 2em;
-    font-size: 1.5em;
-    }
 
     .livesound {
     padding-top: 3em;

@@ -68,28 +68,44 @@
    (its a loading issue please remember)
    adjust nav icon margins 949 - 1002
    desk icon sizing 1002 - 1008
-
-   To Do:
    4/6
    livesound 1015-1226
-   -events
+   -events 
    link event pages 1226 - 1244
-   
+   book live sound button 1245 - 105
+
+   To Do:
+   4/8
    -event
+   switch to slider 8:43 - 1041
+   animate cards 
 
    style peek window
    style rentals components 2h
-
-
-   lacoustics
-
+   4/9
    team
       -directory
       -careers
       join Rhema 1h
-
-
+   4/10
       home . 5h
-
       deploy .75h
+   4/11
       audio scroller 2h
+
+                   
+Headliners
+Weddings
+Conventions
+Block Parties
+Trade Shows
+Corporate Retreats
+Indoor Concerts
+Faith Gatherings
+Multi-Stage Festivals
+Fashion Shows
+Public Lectures
+Live Theater
+Seasonal Attractions
+Surf Competitions
+All Live Events
