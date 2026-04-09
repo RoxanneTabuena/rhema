@@ -73,24 +73,30 @@
    -events 
    link event pages 1226 - 1244
    book live sound button 1245 - 105
-
-   To Do:
    4/8
    -event
    switch to slider 8:43 - 1041
-   animate cards 
+
+   To Do:
+   debug roller 840-958
+   replace arrow with link 1000-1011
+   add mobile margin 1011-1013
+   adjust header z- fighting 1014 - 1034
+   adjust desktop ticker sizing 1034 - 1044
+   color desktop h3 1044 - 1046
+   style desktop live sound 1014-
 
    style peek window
    style rentals components 2h
-   4/9
+
    team
       -directory
       -careers
       join Rhema 1h
-   4/10
+
       home . 5h
       deploy .75h
-   4/11
+
       audio scroller 2h
 
                    
