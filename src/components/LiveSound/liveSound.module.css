@@ -1,11 +1,6 @@
-.logo {
-    pointer-events: none;
-}
-
 .livesound {
     position: relative;
     max-height: 90vh;
-    overflow: scroll;
 }
 
 .livesound>h1 {
@@ -27,36 +22,19 @@
 
 .livesound h3{
     font-family: 'titles';
-    color: mediumslateblue;
 }
 
 .content h2{
     font-family: 'highlights';
 }
 
-.service > h3, .premium > h3, .crew > h3 {
-    text-transform: uppercase ;
-    font-style: italic;
-    text-align: left;
-}
-
-.main>h3{
-    color: white;
-}
-
-
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
-    .content {
-        margin: 0 .5em;
-    }
 
-    .main > h3 {
+    .main {
+        font-weight: bold;
+        font-style: italic;
         text-align: center;
-    }
-
-    .short, .long {
-        margin-left: 3em
     }
 
     .content h2, h3,h4 {
@@ -67,17 +45,21 @@
         font-size: 2em;
     }
     
-    .livesound{
-        top: -56px;
+    .livesound, .content {
+        top: -20px;
     }
 
 }
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {
-
-    .livesound {
-    padding-top: 3em;
+    .main {
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        padding: .5em 2em;
+        font-size: 2.5em;
+        display: flex;
     }
 
     .content h2{
@@ -90,7 +72,7 @@
     
     .livesound> h1{
         font-size: 5em;
-        top:-200px;
+        top: -120px;
     }
 
 }

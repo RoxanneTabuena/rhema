@@ -8,6 +8,7 @@ import { Careers } from './components/Team/Careers/Careers'
 import { JoinRhema } from './components/Team/JoinRhema/JoinRhema';
 // live sound tree
 import { Livesound } from './components/Livesound/Livesound';
+
 // backline tree
 import { Rentals} from './components/Rentals/Rentals';
 import { Inventory } from './components/Rentals/Inventory';
