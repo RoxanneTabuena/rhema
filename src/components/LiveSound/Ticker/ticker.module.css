@@ -15,14 +15,14 @@
 /* DESK RULES */
 @media screen and ( min-width: 700px) {
     :root {
-        --font-size: 8rem;
+        --font-size: 10rem;
         --line-height: 1.2;
         --num-words: 16; /* Be sure to include the extra word at the end in this count */
         --animation-duration: 30s;
     }
 
     .slide{
-        margin-left: 1.5rem;
+        margin-left: 2rem;
     }
 
 }
@@ -54,6 +54,7 @@ h3.ticker{
     text-align: left;
     display: block;
     font-size: var(--font-size);
+    color: mediumslateblue;
 }
 
 
