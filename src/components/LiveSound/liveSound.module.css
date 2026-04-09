@@ -47,6 +47,10 @@
 
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
+    .content {
+        margin: 0 .5em;
+    }
+
     .main > h3 {
         text-align: center;
     }
