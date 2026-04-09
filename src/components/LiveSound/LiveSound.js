@@ -1,10 +1,7 @@
 import style from './livesound.module.css'
 import { Ticker } from './Ticker/Ticker'
-import { NavLink } from 'react-router-dom'
-import { Events } from './Events/Events'
-import { Service } from './Service'
-import { Premium } from './Premium'
-import { Crew } from './Crew'
+import { Roller } from './Roller/Roller'
+import { liveSoundDir } from '../Arrow/liveSoundCopy'
 import { Booknow } from './Booknow/Booknow'
 export const Livesound = () => {
     return (
@@ -15,10 +12,21 @@ export const Livesound = () => {
                 <h3>Hawaii's Audio</h3>
                 <Ticker/>
             </div>
-            <Service />
+            { Object.keys(liveSoundDir).map((a, i)=>{
+                let entry = liveSoundDir[a]
+                return <Roller 
+                            title={entry.title} 
+                            key={entry.title} 
+                            text={entry.text} 
+                            link={entry.link ? entry.link : null} 
+                            index={i}
+                            total={Object.keys(liveSoundDir).length}                            />
+            })}
+            <Roller/>
+            {/* <Service />
             <Premium />
             <Crew/>
-            <NavLink to="/ourExperts"></NavLink>
+            <NavLink to="/ourExperts"></NavLink> */}
             <Booknow/>
         </div>
     </div>)

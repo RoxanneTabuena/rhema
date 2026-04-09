@@ -8,7 +8,6 @@ import { Careers } from './components/Team/Careers/Careers'
 import { JoinRhema } from './components/Team/JoinRhema/JoinRhema';
 // live sound tree
 import { Livesound } from './components/Livesound/Livesound';
-import { Event } from './components/Livesound/Events/Event'
 // backline tree
 import { Rentals} from './components/Rentals/Rentals';
 import { Inventory } from './components/Rentals/Inventory';
@@ -40,7 +39,6 @@ function App() {
       <Route path='purpleShirts' element={<Careers/>}/>
       <Route path='joinRhema' element= { <JoinRhema />}/>
       <Route path='livesound' element= { <Livesound />}/>
-      <Route path='events/:event' element={<Event />}/>
       <Route path='rentals' element= { <Rentals />}/>
       <Route path='inventory' element= { <Inventory />}/>
       <Route path='inventory/:category' element= { <Inventory />}/>

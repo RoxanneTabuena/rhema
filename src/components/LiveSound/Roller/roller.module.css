@@ -1,0 +1,33 @@
+.roller {
+    --art-pause: calc(var(--t)*1s)
+}
+
+.roller h3 {
+    position: relative;
+    left: 100%;
+    animation: calc(var(--i) * 1s + 1s) leftIn 1s forwards;
+}
+
+.art {
+    opacity: 0;
+    transform: translateY(-100%) scaleY(0.1);
+    animation: reveal 1s forwards;
+    animation-delay: calc(var(--i) * 1s + 1s + var(--art-pause));
+}
+
+@keyframes leftIn {
+    from { left: 100% }
+    to { left: 0 }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(-100%) scaleY(0.1);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scaleY(1);
+    }
+}
+
