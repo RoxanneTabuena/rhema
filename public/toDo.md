@@ -84,6 +84,7 @@
    adjust header z- fighting 1014 - 1034
    adjust desktop ticker sizing 1034 - 1044
    color desktop h3 1044 - 1046
+   adjust desktop sizing 1046 - 1053
    style desktop live sound 1014-
 
    style peek window

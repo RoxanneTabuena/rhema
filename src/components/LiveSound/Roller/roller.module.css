@@ -1,11 +1,12 @@
 .roller {
-    --art-pause: calc(var(--t)*1s)
+    --art-pause: calc(var(--t)*1s);
+    --placement: calc(100% / var(--t) * (var(--i)+1))
 }
 
 .roller h3 {
     text-align: left;
     position: relative;
-    left: 100%;
+    left: 500%;
     animation: calc(var(--i) * 1s + 1s) leftIn 1s forwards;
     color: mediumslateblue
 }
@@ -29,7 +30,7 @@
 }
 
 @keyframes leftIn {
-    from { left: 100% }
+    from { left: 500% }
     to { left: 0 }
 }
 
@@ -52,6 +53,16 @@
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {
+
+    .roller{
+        width: 50%;
+        font-size: 1.5em;
+    }
+
+    .link {
+        font-size: 1.5em;
+        text-shadow: 5px 5px blueviolet;
+    }
 
 
 }
