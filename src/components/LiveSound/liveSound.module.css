@@ -82,5 +82,11 @@
     .content {
         top:-120px;
     }
+    
+    .articles {
+        margin: 0 auto;
+        min-height: fit-content;
+        overflow: scroll;
+    }
 
 }

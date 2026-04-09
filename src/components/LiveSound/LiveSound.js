@@ -12,21 +12,19 @@ export const Livesound = () => {
                 <h3>Hawaii's Audio</h3>
                 <Ticker/>
             </div>
-            { Object.keys(liveSoundDir).map((a, i)=>{
-                let entry = liveSoundDir[a]
-                return <Roller 
-                            title={entry.title} 
-                            key={entry.title} 
-                            text={entry.text} 
-                            link={entry.link ? entry.link : null} 
-                            index={i}
-                            total={Object.keys(liveSoundDir).length}                            />
-            })}
+            <div className={style.articles}>
+                { Object.keys(liveSoundDir).map((a, i)=>{
+                    let entry = liveSoundDir[a]
+                    return <Roller 
+                                title={entry.title} 
+                                key={entry.title} 
+                                text={entry.text} 
+                                link={entry.link ? entry.link : null} 
+                                index={i}
+                                total={Object.keys(liveSoundDir).length}                            />
+                })}
+            </div>
             <Roller/>
-            {/* <Service />
-            <Premium />
-            <Crew/>
-            <NavLink to="/ourExperts"></NavLink> */}
             <Booknow/>
         </div>
     </div>)

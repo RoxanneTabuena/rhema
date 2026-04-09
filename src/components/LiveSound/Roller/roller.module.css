@@ -1,6 +1,6 @@
 .roller {
     --art-pause: calc(var(--t)*1s);
-    --placement: calc(100% / var(--t) * (var(--i)+1))
+    --place: calc((100% / var(--t)) * var(--i) + 10%)
 }
 
 .roller h3 {
@@ -57,6 +57,7 @@
     .roller{
         width: 50%;
         font-size: 1.5em;
+        transform: translateX(var(--place));
     }
 
     .link {
