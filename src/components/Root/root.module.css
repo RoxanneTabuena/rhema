@@ -1,4 +1,6 @@
-
+*{
+    line-height: normal;
+}
 
 .body {
     max-width: 100vw;
@@ -134,24 +136,6 @@ main{
     /* Set core body defaults */
     body {
         min-height: 100vh;
-        line-height: 1.5;
-    }
-
-    /* Set shorter line heights on headings and interactive elements */
-    h1 {
-        line-height: 1;
-    }
-    h2 {
-        line-height: 1.1;
-    }
-    h3 {
-        line-height: 1.2;
-    }
-    h4 {
-        line-height: 1.3;
-    }
-    h5 {
-        line-height: 1.4;
     }
 
     /* Balance text wrapping on headings */

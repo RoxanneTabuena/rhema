@@ -1,8 +1,11 @@
+import { Banner } from '../Blocks/Banner/Banner'
 import style from './team.module.css'
 export const Team = () => {
-    return (<div>
-        <h1 className = {style.logo} >Rhema Services</h1>
-        <h2>"Hawaii's Industry Choice for Audio"</h2>
-
-    </div>)
+    return (
+        <div>
+            <Banner
+                title='Our Experts'
+                summary='meet the purple shirts'
+            />
+        </div>)
 }

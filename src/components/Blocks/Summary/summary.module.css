@@ -1,0 +1,33 @@
+
+.summary{
+    text-align: center;
+    animation: slide-in 1s ease-out forwards 2s;
+    font-weight: bold;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    .summary{
+        padding: 0 2em;
+        width: 100%;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .summary{
+        font-size: 2em;
+    }
+}

@@ -45,8 +45,8 @@
         font-size: 2em;
     }
     
-    .livesound, .content {
-        top: -20px;
+    .livesound {
+        top: -56px;
     }
 
 }

@@ -76,8 +76,7 @@
    4/8
    -event
    switch to slider 8:43 - 1041
-
-   To Do:
+   4/9
    debug roller 840-958
    replace arrow with link 1000-1011
    add mobile margin 1011-1013
@@ -85,34 +84,43 @@
    adjust desktop ticker sizing 1034 - 1044
    color desktop h3 1044 - 1046
    adjust desktop sizing 1046 - 1053
-   style desktop live sound 1014-
+   adjust desktop placement 1053 - 1112
+   4/30
+   uniform page titles
+   - page title component 1230-1240
+   - summary component 1240 - 1:01
+   - banner component 101 - 1:29
+   - add to pages
+      - about
+      - live sound
+      - rentals
+      - inventory
+      - 
 
-   style peek window
-   style rentals components 2h
 
+   To Do:
+   figure out header issues
    team
       -directory
       -careers
       join Rhema 1h
+
+   style peek window
+   style rentals components 2h
+   look into scroller issues
+\   
 
       home . 5h
       deploy .75h
 
       audio scroller 2h
 
-                   
-Headliners
-Weddings
-Conventions
-Block Parties
-Trade Shows
-Corporate Retreats
-Indoor Concerts
-Faith Gatherings
-Multi-Stage Festivals
-Fashion Shows
-Public Lectures
-Live Theater
-Seasonal Attractions
-Surf Competitions
-All Live Events
+
+BBQ
+
+2:45 Pack
+   - Grill Platters
+   - Rice Tub
+   - Mac Salad Tub
+   - Water
+3:00 Feed Turi and Leave for Party
