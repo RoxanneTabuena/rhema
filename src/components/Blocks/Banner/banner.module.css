@@ -1,24 +1,22 @@
 .banner{
-    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position:relative;
 }
 
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
     .banner{
-        position:absolute;
         top: -1em;
-        flex-direction: column;
-        justify-content: center;
     }
 }
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {
     .banner {
-        justify-content: center;
-        align-items: center;
-        position: absolute;
         top: -3em;
     }
 }

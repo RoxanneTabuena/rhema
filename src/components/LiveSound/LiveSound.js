@@ -1,4 +1,5 @@
 import style from './livesound.module.css'
+import { Banner } from '../Blocks/Banner/Banner'
 import { Ticker } from './Ticker/Ticker'
 import { Roller } from './Roller/Roller'
 import { liveSoundDir } from '../Arrow/liveSoundCopy'
@@ -6,6 +7,7 @@ import { Booknow } from './Booknow/Booknow'
 export const Livesound = () => {
     return (
     <div className={style.livesound}>
+        <Banner title='Live Sound' />
         <div className={style.main}>
             <h3>Hawaii's Audio</h3>
             <Ticker/>

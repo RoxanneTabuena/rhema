@@ -3,22 +3,6 @@
     max-height: 90vh;
 }
 
-.about>h1 {
-    font-family: 'Highlights';
-    text-align: center;
-    margin: .5em 0 auto;
-    position: absolute;
-    width: 100%;
-    color:blueviolet;
-    pointer-events: none;
-    z-index: 20;
-}
-
-.content {
-    height: 85vh;
-    overflow: scroll;
-}
-
 .article {
     margin: .5em;
 }
@@ -41,9 +25,6 @@
 
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
-    .about {
-    padding-top: 1em;
-    }
 
     .mission {
     font-weight: bold;
