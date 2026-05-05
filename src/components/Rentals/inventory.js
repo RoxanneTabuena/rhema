@@ -8,9 +8,11 @@ export const Inventory = () => {
     const {pathname} = useLocation()
     return (
     <div className={style.inventory}>
+            { pathname === '/inventory' &&             
             <Summary 
                 summary='Browse top of the line gear to complete your sound'
             />
+            }
             <Dates/>
             <Relative/>
             <Display key={pathname}/>
