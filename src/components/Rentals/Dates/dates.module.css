@@ -1,9 +1,26 @@
-.comp{
-    
+.dates{
+    font-weight: bold;
+    height: fit-content;
 }
+
+.picker {
+    color: white
+}
+
 
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {}
 
 /* DESK RULES */
-@media screen and ( min-width: 700px) {}
+@media screen and ( min-width: 700px) {
+    .dates {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+    }
+
+    .dates > * {
+        margin: 0 1em;
+    }
+}
