@@ -45,9 +45,13 @@ body{
     font-family: tahoma;
 }
 
+header {
+    z-index: 40;
+}
+
 main{
     position: relative;
-    z-index: 20;
+    z-index: 50;
 }
 
 .logo {
@@ -65,6 +69,7 @@ main{
     main{
         min-height: 90vh;
         max-height: 90vh;
+        overflow-x: scroll;
     }
     main>*, header>* {
         min-height: 100%;

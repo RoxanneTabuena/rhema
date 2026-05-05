@@ -1,6 +1,7 @@
 .livesound {
     position: relative;
     max-height: 90vh;
+    /* overflow-y: scroll; */
 }
 
 

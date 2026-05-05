@@ -1,4 +1,4 @@
-import { Banner } from '../Blocks/Banner/Banner'
+import { Summary } from '../Blocks/Summary/Summary'
 import { useLocation } from 'react-router-dom'
 import { Display } from './Display/Display'
 import { Dates } from './Dates/Dates'
@@ -8,8 +8,7 @@ export const Inventory = () => {
     const {pathname} = useLocation()
     return (
     <div className={style.inventory}>
-            <Banner 
-                title='Backline Inventory' 
+            <Summary 
                 summary='Browse top of the line gear to complete your sound'
             />
             <Dates/>

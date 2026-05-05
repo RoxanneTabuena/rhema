@@ -1,10 +1,13 @@
 
-.title{
+.page{
     text-align: center;
     pointer-events: none;
     font-family: 'highlights';
     color: blueviolet;
     animation: reveal 2s ease-out forwards;
+    width: 100vw;
+    position:absolute;
+    pointer-events: none;
 }
 
 @keyframes reveal {
@@ -17,16 +20,17 @@
 }
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
-    .title{
+    .page{
         width: 100%;
         line-height: .5em;
+        bottom: -.25em;
     }
 }
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {
-    .title{
+    .page{
         font-size: 5em;
-        width: fit-content;
+        bottom: -4rem;
     }
 }

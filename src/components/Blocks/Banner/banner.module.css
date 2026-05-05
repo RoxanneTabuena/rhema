@@ -4,19 +4,20 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    position:relative;
+    position:absolute;
+    pointer-events: none;
 }
 
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
     .banner{
-        top: -1em;
+        bottom: -.5em;
     }
 }
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {
     .banner {
-        top: -3em;
+        bottom: -2em;
     }
 }

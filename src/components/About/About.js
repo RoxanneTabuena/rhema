@@ -1,4 +1,4 @@
-import { Banner } from '../Blocks/Banner/Banner'
+import { Summary } from '../Blocks/Summary/Summary'
 import { Reviews } from './Reviews/Reviews'
 import { Operations } from './Operations/Operations'
 import { Clients } from './Clients/Clients'
@@ -8,7 +8,7 @@ export const About = () => {
     const history = `From our inception in 1999, Rhema Services was based on a desire to give our clients quality, integrity, and reputable professional sound reinforcement services. Whether it is a sales meeting for a Fortune 500 company or a Hawaiian Trio, we respect your business partnership and are dedicated to making your event the most successful. By implementing this philosophy, our core business is driven by our returning customers.`
     return (
     <div className={style.about}>
-        <Banner title="Our Shop" summary={mission}/>
+        <Summary summary={mission}/>
         <h2>Operations</h2>
         <Operations />
         <h2>Legacy</h2>
