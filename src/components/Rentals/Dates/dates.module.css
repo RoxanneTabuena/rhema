@@ -1,13 +1,28 @@
 .dates{
     font-weight: bold;
-    height: fit-content;
 }
 
-.picker {
-    color: white
+.input{
+    text-align: center;
 }
 
+.calendar *{
+    padding: 0 !important;
+}
 
+.calendar button span::before{
+    color:black;
+    border-color: black;
+    height: 16px;
+    top: 16px;
+    width: 16px;
+}
+
+.dates div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {}
 
@@ -22,5 +37,13 @@
 
     .dates > * {
         margin: 0 1em;
+    }
+
+    .calendar *, .month {
+        font-size: 2rem !important;
+    }
+
+    .input{
+        width: 7em;
     }
 }

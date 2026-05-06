@@ -91,23 +91,33 @@
    - summary component 1240 - 1:01
    - banner component 101 - 1:29
    - add to pages
-      - about
-      - live sound
-      - rentals
-      - inventory
-      - 
-
-
+      - about 130 - 142
+      - live sound 142 - 149
+      - rentals149 - 156
+      - inventory 156 - 203
+   5/5
+   root formatting 116- 300
+   - move banner to header 116 - 231
+   - Update pages 231
+      - about 231 - 251
+      - rentals 251 - 255
+      - inventory 255 - 257
+   look into scroller issues
+5/6
+style rentals components  
+   - dates 1020 - 1146
+   - relative nav
+   - display
+   
    To Do:
-   figure out header issues
+
+   rentals copy
    team
       -directory
       -careers
       join Rhema 1h
 
    style peek window
-   style rentals components 2h
-   look into scroller issues
 \   
 
       home . 5h

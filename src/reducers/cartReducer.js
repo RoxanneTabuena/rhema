@@ -1,8 +1,8 @@
 export const initialCartState = {
     items: [],
     dates: {
-        pickup: '2026-03-24',
-        dropoff: '2026-03-24'
+        pickup: '',
+        dropoff: ''
     },
     times: {
         pickup: '',
