@@ -1,11 +1,31 @@
 .relative{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: baseline;
     width:100%;
+}
+
+.path {
+    font-family: 'highlights';
+    display: flex;
+    align-items: baseline;
+}
+
+.page {
+    text-decoration: underline;
+}
+
+.path:not(:first-child)::before{
+    content: ">";
+    text-decoration: none;
 }
 
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {}
 
 /* DESK RULES */
-@media screen and ( min-width: 700px) {}
+@media screen and ( min-width: 700px) {
+    .path {
+        font-size: 3em;
+    }
+}

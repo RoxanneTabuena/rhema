@@ -6,14 +6,18 @@ export const Relative = () => {
     const {pathname}=useLocation()
     const paths = pathname.split('/')
     return (
-        <div>
+        <div className={style.relative}>
             {
-            paths.at(-1) === 'all' ? <p onClick={()=>{navigate('/inventory')}}>rentals</p> :
+            paths.at(-1) === 'all' ? <div className={style.path} onClick={()=>{navigate('/inventory')}}><p className={style.page}>inventory</p></div> :
             paths.filter((p)=>{
                 return p!=='all'
-            }).map((p,i)=>{
-                let step = (paths.length-1 - i)*-1
-                return <p key={p} onClick={()=>{navigate(step)}} >{p.replaceAll('%20',' ')}</p>
+            }).slice(1,-1).map((p,i)=>{
+                let step = (paths.length - 2) *-1 + i 
+                return (
+                    <div className={style.path} key={p} onClick={()=>{navigate(step)}} >
+                        <p className={style.page}>{p.replaceAll('%20',' ')}</p>
+                    </div>
+                )
             })}
         </div>
     )
