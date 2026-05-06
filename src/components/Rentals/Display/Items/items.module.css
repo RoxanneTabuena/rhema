@@ -1,9 +1,41 @@
-.comp{
-    
+
+.preview > a{
+    font-family: 'highlights';
+    text-decoration: none;
 }
 
+.items {
+    margin: 0 auto;
+}
 /* PHONE RULES */
-@media screen and ( max-width: 699px) {}
+@media screen and ( max-width: 699px) {
+    .items {
+        width: 80%;
+    }
+
+    .preview {
+        margin: 1em 0;
+        font-size: 1.5em;
+    }
+    
+    .preview>a{
+        text-shadow: 1px 1px blueviolet;
+    }
+}
 
 /* DESK RULES */
-@media screen and ( min-width: 700px) {}
+@media screen and ( min-width: 700px) {
+    .items {
+        width: fit-content
+    }
+
+    .preview {
+        margin: 1em;
+        font-size: 3em;
+    }
+
+    .preview>a{
+        text-shadow: 5px 5px blueviolet;
+    }
+
+}

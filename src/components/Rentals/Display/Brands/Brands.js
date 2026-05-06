@@ -9,6 +9,7 @@ export const Brands = ({category}) => {
     })
     return (
         <div className={style.brands}>
+            <p>select a brand:</p>
             {brands.map((b)=>{
                 return <NavLink to={b} key={b} >{b}</NavLink>
             })}

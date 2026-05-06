@@ -1,9 +1,40 @@
-.comp{
-    
+.brands {
+    display: flex;
+    flex-direction: column;
+    font-family: 'titles';
+    height: 100%;
 }
 
+.brands > p {
+    font-family: 'highlights';
+}
+
+.brands > a{
+    text-decoration: none;
+    color:blueviolet
+}
 /* PHONE RULES */
-@media screen and ( max-width: 699px) {}
+@media screen and ( max-width: 699px) {
+    .brands {
+        font-size: 1.5em;
+        justify-content: center;
+    }
+    
+    .brands > a {
+        margin-left: 2em;
+    }
+}
 
 /* DESK RULES */
-@media screen and ( min-width: 700px) {}
+@media screen and ( min-width: 700px) {
+    .brands {
+        font-size: 3em;
+        justify-content: center;
+    }
+    
+    .brands > a {
+        margin-left: 2em;
+    }
+
+
+}
