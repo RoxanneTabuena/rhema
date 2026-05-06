@@ -6,16 +6,10 @@
     text-align: center;
 }
 
-.calendar *{
-    padding: 0 !important;
-}
-
 .calendar button span::before{
     color:black;
     border-color: black;
-    height: 16px;
-    top: 16px;
-    width: 16px;
+
 }
 
 .dates>div {
@@ -23,8 +17,21 @@
     justify-content: center;
     align-items: center;
 }
+
+.input{
+    width: 7em;
+    background-color: black;
+    border-bottom: solid 1pt white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
 /* PHONE RULES */
-@media screen and ( max-width: 699px) {}
+@media screen and ( max-width: 699px) {
+    .calender * {
+        font-size: 1em !important;
+    }
+}
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {
@@ -39,11 +46,23 @@
         margin: 0 1em;
     }
 
-    .calendar *, .month {
+    .calendar * {
         font-size: 2rem !important;
     }
 
     .input{
         width: 7em;
     }
+
+    .calendar button span::before{
+    height: 16px;
+    top: 16px;
+    width: 16px;
+    }
+
+
+.calendar *{
+    padding: 0 !important;
+}
+
 }
