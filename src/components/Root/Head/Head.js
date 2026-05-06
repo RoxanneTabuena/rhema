@@ -13,7 +13,7 @@ export const Head = ({togPeek}) => {
     // use location to get title
     const { pathname } = useLocation()
     // split camel case and capitalize string to format title
-    const title = pathname.slice(1).split('/').at(-1).split(/(?=[A-Z])/).join(' ').toUpperCase().replace('%20', ' ')
+    const title = pathname.slice(1).split('/').at(-1).split(/(?=[A-Z])/).join(' ').toUpperCase().replaceAll('%20', ' ')
     return (
         <div className={style.head}>
             <Page title={title}/>
