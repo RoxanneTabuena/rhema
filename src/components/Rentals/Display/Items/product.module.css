@@ -1,0 +1,73 @@
+.product h3{
+    color: slateblue;
+}
+
+.specs{
+    list-style-type: disc;
+}
+
+
+.product {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+.factory{
+    margin-left: .25em;
+}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    .description {
+        text-align: center;
+        margin-bottom: .5em;
+    }
+    
+    .prodImg {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .glance {
+        display: flex;
+    }
+
+    .desk {
+        display: none;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .prodImg{
+        max-height: 50vh;
+    }
+
+    .desk {
+        font-size: 2em;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: left !important;
+        max-height: 50vh;
+    }
+
+    .desk > div{
+        margin-left: 1.5em;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .specs {
+        margin-left: 3em;
+        text-align: left;
+    }
+    
+    .desk h3{
+        text-align: left;
+    }
+}
