@@ -1,10 +1,11 @@
 
 .summary{
-    animation: slide-in 1s ease-out forwards 2s;
+    animation: slide-in 1s ease-out forwards 1s;
     font-weight: bold;
     transform: translateX(100%);
     opacity: 0;
     text-align: center;
+    height: min-content;
 }
 
 @keyframes slide-in {
