@@ -43,6 +43,14 @@
     color: blueviolet;
 }
 
+.checkout {
+    margin: 1em 0 .5em;
+    font-family: 'highlights';
+    text-decoration: none;
+    text-align: right;
+    display: block;
+}
+
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
     .counter{

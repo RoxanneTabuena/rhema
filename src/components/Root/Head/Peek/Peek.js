@@ -1,5 +1,6 @@
 import { Arrow } from '../../../Arrow/Arrow'
 import { Current } from '../../../Contact/Booking/Request/Order/Current/Current'
+import { NavLink } from 'react-router-dom'
 import style from './peek.module.css'
 export const Peek = ({close}) => {
     const viewCheck = (t) => {
@@ -13,7 +14,7 @@ export const Peek = ({close}) => {
                 <button onClick={close}x>x</button>
                 <div>
                     <Current/>
-                    <Arrow color="purple" text="CHECKOUT" path="/rentalRequest" onClick={close}/>
+                    <NavLink to="/rentalRequest" className={style.checkout}>CheckOut</NavLink>
                 </div>
             </div>
         </div>
