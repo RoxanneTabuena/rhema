@@ -1,11 +1,11 @@
-.current div{
+.current > div{
     display: flex;
     justify-content: space-around;
 }
 
 .current h3 {
-    font-family: 'highlights';
-    color: blueviolet;
+    font-family: 'titles';
+    color: black;
 }
 
 /* PHONE RULES */

@@ -1,10 +1,25 @@
 div.itemline{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: space-between !important;
+    align-items: baseline;
+    color: slateblue;
+    width: 100%;
 }
-div.name {
+
+.name, .qty {
+    display: flex;
+}
+
+.qty {
+    justify-content: space-evenly;
+}
+
+.name {
+    text-align: left;
+}
+.itemline > .name > p {
     justify-content: flex-start;
+    font-weight: bold !important;
 }
 input.edit {
     width: 2em;
