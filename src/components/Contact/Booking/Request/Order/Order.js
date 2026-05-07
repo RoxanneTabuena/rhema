@@ -13,6 +13,7 @@ import emailjs from 'emailjs-com'
 import style from './order.module.css'
 import { useContext } from 'react'
 import { CartContext } from '../../../../../context/CartContext'
+import { useNavigate } from 'react-router-dom'
 
 export const Order = () => {
     const [ type, setType ] = useState('')
@@ -22,6 +23,7 @@ export const Order = () => {
     const [ cartState, cartDispatch ] = useContext(CartContext)
     const { customer, dates } = cartState
     const { name, email, phone, preferred } = customer
+    const navigate = useNavigate()
 
     const contactSec = {
         name: {
@@ -55,7 +57,7 @@ export const Order = () => {
     emailjs.sendForm(service_id, template_id, e.target, public_key)
     .then((result) => {
         setOutcome('success')
-        setAlertActive(true)
+        navigate('/thankyou')
     }, (error) => {
         setOutcome('failure')
         setAlertActive(true)
@@ -64,7 +66,6 @@ export const Order = () => {
     }
 
     const handleClose = () => {
-        if(outcome === 'success')
         setAlertActive(false)
     }
 
