@@ -4,9 +4,11 @@ export const initialCartState = {
         pickup: '',
         dropoff: ''
     },
-    times: {
-        pickup: '',
-        dropoff: ''
+    customer: {
+        name: '',
+        preferred: '',
+        email: '',
+        phone: ''
     }
     };
 
@@ -96,20 +98,35 @@ switch (action.type) {
         }
     };
 
-    case "PICKUP_TIME":
-        console.log('pickup')
+    case "CUSTOMER_NAME":
     return {
         ...state,
-        times: {...state.times,
-            pickup: action.payload
+        customer: {...state.customer,
+            name: action.payload
         }
     };
 
-    case "DROPOFF_TIME":
+    case "CUSTOMER_EMAIL":
     return {
         ...state,
-        times: {...state.times,
-            dropoff: action.payload
+        customer: {...state.customer,
+            email: action.payload
+        }
+    };
+
+    case "CUSTOMER_PHONE":
+    return {
+        ...state,
+        customer: {...state.customer,
+            phone: action.payload
+        }
+    };
+
+    case "CUSTOMER_PREFERRED":
+    return {
+        ...state,
+        customer: {...state.customer,
+            preferred: action.payload
         }
     };
 

@@ -16,7 +16,7 @@ p {
 @media screen and ( max-width: 699px) {
     .order {
         width: 90%;
-        margin: auto;
+        margin: .8em;
         padding: .5em;
         border-radius: 20px;
     }

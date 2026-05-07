@@ -11,33 +11,33 @@ import { Alert } from '../../../Alert'
 import { service_id, template_id, public_key } from "../../../keys"
 import emailjs from 'emailjs-com'
 import style from './order.module.css'
+import { useContext } from 'react'
+import { CartContext } from '../../../../../context/CartContext'
 
 export const Order = () => {
-    const [ name, setName ] = useState('')
-    const [ phone, setPhone ] = useState('')
-    const [ preferred, setPreferred ] = useState('')
-    const [ email, setEmail ] = useState('')
     const [ type, setType ] = useState('')
     const [ message, setMessage ] = useState('')
     const [alertActive, setAlertActive] = useState(false)
     const [outcome, setOutcome] = useState('success')
-
+    const [ cartState, cartDispatch ] = useContext(CartContext)
+    const { customer, dates } = cartState
+    const { name, email, phone, preferred } = customer
 
     const contactSec = {
         name: {
-            handler: setName,
+            handler: (name) => { cartDispatch({type:'CUSTOMER_NAME', payload:name})},
             value: name
         },
         email: {
-            handler: setEmail,
+            handler: (email) => { cartDispatch({type:'CUSTOMER_EMAIL', payload:email})},
             value: email
         },
         phone: {
-            handler: setPhone,
+            handler: (phone) => { cartDispatch({type:'CUSTOMER_PHONE', payload:phone})},
             value: phone
         },
         preferred: {
-            handler: setPreferred,
+            handler: (preferred) => { cartDispatch({type:'CUSTOMER_PREFERRED', payload:preferred})},
             value: preferred
         },
     }
@@ -65,12 +65,6 @@ export const Order = () => {
 
     const handleClose = () => {
         if(outcome === 'success')
-        {
-            setName('')
-            setPhone('')
-            setEmail('')
-            setPreferred('')
-        }
         setAlertActive(false)
     }
 
@@ -82,7 +76,6 @@ export const Order = () => {
             <ContactSec info={contactSec}/>
             <h3>Rental Details</h3>
             <Dates />
-            <Times />
             <Checklist />
             <Current/>
             <h3>Send a Message</h3>
