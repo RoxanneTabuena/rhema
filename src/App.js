@@ -19,6 +19,7 @@ import { Request } from './components/Contact/Booking/Request/Request'
 // contact tree
 import { Contact } from './components/Contact/Contact';
 import { GeneralInquiry } from './components/Contact/GeneralInquiry/GeneralInquiry';
+import { Thankyou } from './components/Contact/Thankyou/Thankyou';
 // router 
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 // cart
@@ -49,6 +50,7 @@ function App() {
       <Route path='bookLiveSound' element= { <BookLiveSound />}/>
       <Route path='rentalRequest' element= { <Request />}/>
       <Route path='contact' element= { <Contact />}/>
+      <Route path='thankyou' element= { <Thankyou />}/>
       <Route path='generalInquiry' element= { <GeneralInquiry />}/>
 
     </Route>
