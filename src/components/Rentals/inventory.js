@@ -13,7 +13,10 @@ export const Inventory = () => {
                 summary='Browse top of the line gear to complete your sound'
             />
             }
-            <Relative/>
+            {
+                pathname !== '/inventory' &&
+                <Relative/>
+            }
             <Dates/>
             <Display key={pathname}/>
     </div>)
