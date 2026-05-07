@@ -2,14 +2,13 @@ import { Add } from './Add/Add'
 import { NavLink } from 'react-router-dom'
 import style from './items.module.css'
 export const Preview = ({item, mono}) => {
-    let {name} = item
-    if(mono){
-        name = name.replace(mono.brand,'')
-    }
+    const {name} = item
+    let title
+    title = mono ? name.replace(mono.brand,'') : name
     return (
         <div className={style.preview}>
             <NavLink to={`${name}`}>
-                {name}
+                {title}
                 {/* {product title, picture, availability, quick add} */}
                 {/* click for full product page */}
             </NavLink>
