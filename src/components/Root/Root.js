@@ -7,6 +7,9 @@ import { Foot } from './Foot/Foot'
 import { Head } from "./Head/Head"
 import { Menu } from './Head/Nav/Menu/Menu'
 import { MenuContext } from '../../context/MenuContext'
+import { WindowContext } from '../../context/WindowContext'
+import { Window } from '../Blocks/Window/Window'
+
 export const Root = () => {
     // control display state
     const [display, setDisplay] = useState('reg')
@@ -17,6 +20,9 @@ export const Root = () => {
     const menuOpen = menuState.open
     // get pathname
     const {pathname} = useLocation()
+    // get window context
+    const [windowState, windowDispatch] = useContext(WindowContext)
+    const { windowOpen, windowContent } = windowState
 
     // root display options
     const displays = {
@@ -49,6 +55,7 @@ export const Root = () => {
 
     return (
         <div>
+            {windowOpen && <Window content={windowContent}/>}
             {peek && <Peek close={()=>setPeek(false)}/>}
             {displays[display]}
         </div>
