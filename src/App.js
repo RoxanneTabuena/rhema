@@ -29,6 +29,9 @@ import { cartReducer, initialCartState } from "./reducers/cartReducer";
 // menu
 import { MenuContext } from './context/MenuContext';
 import { menuReducer, initialMenuState } from "./reducers/menuReducer";
+// alert window
+import { WindowContext } from './context/WindowContext';
+import { windowReducer, initialWindowState } from './reducers/windowReducer';
 import './App.css';
 
 function App() {
@@ -57,12 +60,15 @@ function App() {
   ))
   const [ cartState, cartDispatch ] = useReducer( cartReducer, initialCartState)
   const [ menuState, menuDispatch ] = useReducer( menuReducer, initialMenuState)
+  const [ windowState, windowDispatch ] = useReducer( windowReducer, initialWindowState)
   return (
-    <MenuContext.Provider value={[menuState, menuDispatch]}>
-      <CartContext.Provider value={[cartState, cartDispatch]}>
-        <RouterProvider router={router}/>
-      </CartContext.Provider>
-    </MenuContext.Provider>
+    <WindowContext.Provider value={[windowState, windowDispatch]}>
+      <MenuContext.Provider value={[menuState, menuDispatch]}>
+        <CartContext.Provider value={[cartState, cartDispatch]}>
+          <RouterProvider router={router}/>
+        </CartContext.Provider>
+      </MenuContext.Provider>
+    </WindowContext.Provider>
   );
 }
 
