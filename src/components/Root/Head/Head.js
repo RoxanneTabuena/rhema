@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { Nav } from './Nav/Menu/Nav'
 import { Page } from '../../Blocks/Page/Page'
 import style from './head.module.css'
-export const Head = ({togPeek}) => {
+export const Head = () => {
     // use location to get title
     const { pathname } = useLocation()
     // split camel case and capitalize string to format title
