@@ -18,7 +18,7 @@ export const Counter = () => {
     const [cartState, cartDispatch] = useContext(CartContext)
     // get item count
     const { items } = cartState
-    const count = Object.values(items).map((i)=>{return i.qty}).reduce((a,b)=>a+b)
+    let count = !items.length ? 0 : Object.values(items).map((i)=>{return i.qty}).reduce((a,b)=>a+b)
     
     // get window state
     const [windowState, windowDispatch] = useContext(WindowContext)
