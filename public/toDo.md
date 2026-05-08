@@ -106,31 +106,88 @@
 5/6
 style rentals components  
    - dates 1020 - 1146
-   - relative nav
-   - display
-   
-   To Do:
+   - relative nav 1200 - 
+      - filter out irrelivant links 1200-1210
+      - adjust step logic 1210 - 1220
+      - style mobile 1220 - 1228
+      - style desktop 1228 - 1241
+   - display 134 - 235
+      - remove brand name from single brand displays 134 - 150
+      - titles 150
+         - mobile 
+      - add button
 
-   rentals copy
-   team
-      -directory
-      -careers
-      join Rhema 1h
+5/7
+project audit 834 - 852
+- inventory 900 - 1027
+   - product pages
+      - product picture placeholder 909 - 921
+      - add dummy info 921 - 1003
+      - style desktop 1003 - 1027
+- rental request 1027 - 
+   - update to new title/summary format 1027-1038
+   - populate order info 1038 - 1111
+   - style
+      - rental request 1111 - 1129
+      - create thank you page for contact redirect 144 - 215
 
-   style peek window
-\   
-
-      home . 5h
-      deploy .75h
-
-      audio scroller 2h
+TODO:
 
 
-BBQ
 
-2:45 Pack
-   - Grill Platters
-   - Rice Tub
-   - Mac Salad Tub
-   - Water
-3:00 Feed Turi and Leave for Party
+- design team page 215 - 
+   - create info tree 215 - 309
+   - directory 
+      - engineers 440 - 527
+      - crew  & admin 527 - 631
+      - pat 631 - 733
+- careers
+- join rhema page
+
+
+- Contact Forms
+   - rental request
+      - alert window
+      - email response
+      - clear cache
+      - desktop
+   - contact us touchup
+   - rental request - desktop
+   - general inquiry
+      - mobile
+      - desktop
+   - join Rhema
+      - mobile
+      - desktop
+   - live sound
+      - mobile
+      - desktop
+
+- rentals
+   - content design
+   - mobile
+   - desktop
+- live sound page
+   - content edit
+   - pricing info
+   - lower get quote button (mobile)
+   - add get quote button on desktop
+
+- nav
+   - update site map
+   - customize a desktop nav
+- touch up footer
+home page
+- redesign 
+   - add reviews
+   - some kind of book now
+
+-audio animation
+   -thank you
+   - scroller
+
+client resources
+- site guide
+- copy questionaires
+- options / time map
+

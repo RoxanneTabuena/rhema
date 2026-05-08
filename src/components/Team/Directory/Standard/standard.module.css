@@ -1,0 +1,79 @@
+.standard h3{
+    font-family: 'highlights';
+    color:blueviolet;
+}
+.standard h4{
+    font-family: 'highlights';
+    color: slateblue;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    .standard h3 {
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .standard h4 {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .standard {
+        width: 80%;
+        margin: 1em 0 auto;
+    }
+    
+    .standard img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .container{
+        height: 10em;
+    }
+
+    .container > p {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .standard p {
+        font-size: 1.2em;
+    }
+
+    .standard h3 {
+        font-size: 1.7em;
+        text-align: center;
+    }
+    .standard h4 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .standard {
+        width: 30%;
+        margin: 1em 0;
+    }
+    
+    .standard img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .container{
+        width: 80%;
+        height: 12em;
+    }
+
+    .container {
+        margin: auto;
+    }
+}

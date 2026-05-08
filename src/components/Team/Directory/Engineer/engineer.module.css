@@ -1,0 +1,47 @@
+.engineer h3{
+    font-family: 'highlights';
+    color:blueviolet;
+}
+
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    .engineer {
+        width: 80%;
+        margin: 1em 0;
+        text-align: center;
+    }
+    
+    .engineer img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .desk {
+        display: none;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .engineer h3{
+        text-align: left;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desk{
+        display: flex;
+        width: 26em;
+    }
+
+    .desk img {
+        width: 30%;
+    }
+
+    .desk h3 {
+        font-size: 2em;
+    }
+}

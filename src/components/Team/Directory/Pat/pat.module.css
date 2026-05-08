@@ -1,0 +1,93 @@
+.pat {
+    position: relative;
+}
+
+.pat > img{
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+
+.pat h3, .pat h4 {
+    font-family: 'highlights';
+}
+
+.pat h3 {
+    color:blueviolet
+}
+.pat h4 {
+    color: white;
+}
+
+.title {
+    position: absolute;
+    z-index: 200;
+}
+
+.article * {
+    margin: 1em 0;
+}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    .pat > img {
+        width: 60%;
+    }
+    
+    .pat {
+        min-height: 90vh;
+        margin-top: 3em;
+    }
+    
+    .title h3, .title h4{
+        text-align: left;
+    }
+    
+    .title h3 {
+        font-size: 2em;
+    }
+    
+    .title h2 {
+        font-size: 1.5em;
+    }
+    
+    .title {
+        margin-left: 1em;
+        bottom: 0;
+    }
+    
+    .article {
+        margin: 0 1em;
+        height: 45vh;
+        overflow-y: scroll;
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .pat{
+        min-height: 33em;
+        max-width: 65em;
+        margin: auto;
+    }
+
+    .title h3 {
+        font-size: 5em;
+    }
+
+    .title h4 {
+        font-size: 3em;
+    }
+
+    .article {
+        font-size: 1.5em;
+        text-align: left;
+        width: 31em;
+        margin-bottom: 5em;
+    }
+
+    .title {
+        bottom: 1em;
+        left: 13em;
+    }
+}

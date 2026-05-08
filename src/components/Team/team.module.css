@@ -1,13 +1,90 @@
-.logo {
-    font-family: 'branding';
-    font-size: 2em;
-    width: 100%;
-    text-align: center;
-    text-shadow: 2px 2px blueviolet;
+.team h2{
+    font-family: 'titles';
+    color: slateblue;
 }
-h2{
-    color:blueviolet;
-    font-family: 'branding';
-    text-align: center;
-    font-size: 1em;
+
+.team > div > p {
+    font-weight: bold;
+}
+
+/* PHONE RULES */
+@media screen and ( max-width: 699px) {
+    .team {
+        text-align: left;
+    }
+    
+    .team h2 {
+        text-align: left;
+        font-size: 2em;
+    }
+    
+    .directory {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .desk p {
+        display: none;
+    }
+
+    .scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 73vh;
+        overflow-y: scroll;
+    }
+
+    .title > p {
+        display: none
+    }
+}
+
+/* DESK RULES */
+@media screen and ( min-width: 700px) {
+    .team {
+        margin: 0 3em;
+    }
+
+    .desk > h2, .title > h2 {
+        font-size: 3em;
+        min-width: 9em;
+    }
+    
+    .desk > h2 {
+        text-align: left !important;
+    }
+
+    .desk > p, .title > p {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    
+    .directory {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center;
+        margin: 2em 0;
+    }
+    .scroll {
+        max-height: 35em;
+        overflow-y: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .directory > * {
+        margin: 1em;
+    }
+    
+    .desk {
+        width: 26em;
+    }
+
 }
