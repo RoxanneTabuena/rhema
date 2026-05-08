@@ -7,8 +7,6 @@ export function windowReducer(state, action) {
 switch (action.type) {
 
     case "CLOSE": {
-    console.log('close')
-
     return {
         ...state,
         windowOpen: false

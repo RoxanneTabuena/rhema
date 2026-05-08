@@ -9,15 +9,12 @@ export const Window = ({content}) => {
     const closeWindow = () => {
         const action = { type: 'CLOSE'}
         windowDispatch(action)
-        console.log(windowState.windowOpen)
     }
     return (
         <div className={style.windowCont}>
             <div className={style.window}>
                 <button onClick={closeWindow}x>x</button>
-                <div>
-                    <p>{content}</p>
-                </div>
+                {content}
             </div>
         </div>
     )
