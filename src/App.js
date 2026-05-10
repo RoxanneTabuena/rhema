@@ -13,13 +13,13 @@ import { Livesound } from './components/Livesound/Livesound';
 import { Rentals} from './components/Rentals/Rentals';
 import { Inventory } from './components/Rentals/Inventory';
 // booking tree
-import { Booking } from './components/Contact/Booking/Booking';
-import { BookLiveSound } from './components/Contact/Booking/Livesound/BookLiveSound';
-import { Request } from './components/Contact/Booking/Request/Request'
+import { Booking } from './components/Forms/Booking/Booking';
+import { BookLiveSound } from './components/Forms/Booking/Livesound/BookLiveSound';
+import { Request } from './components/Forms/Booking/Request/Request'
 // contact tree
-import { Contact } from './components/Contact/Contact';
-import { GeneralInquiry } from './components/Contact/GeneralInquiry/GeneralInquiry';
-import { Thankyou } from './components/Contact/Thankyou/Thankyou';
+import { Contact } from './components/Forms/Contact';
+import { GeneralInquiry } from './components/Forms/GeneralInquiry/GeneralInquiry';
+import { Thankyou } from './components/Forms/Thankyou/Thankyou';
 // router 
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 // cart

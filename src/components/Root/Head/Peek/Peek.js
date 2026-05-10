@@ -1,4 +1,4 @@
-import { Current } from '../../../Contact/Booking/Request/Order/Current/Current'
+import { Current } from '../../../Forms/Booking/Request/Order/Current/Current'
 import { NavLink } from 'react-router-dom'
 import style from './peek.module.css'
 export const Peek = () => {

@@ -1,9 +1,8 @@
-import { ContactSec } from '../../Contact/ContactSec'
-import { Dropdown } from '../../inputs/Dropdown'
-import { TextBox } from '../../inputs/TextBox'
+import { ContactSec } from '../../../Blocks/inputs/Contact/ContactSec'
+import { Dropdown } from '../../../Blocks/inputs/Dropdown'
+import { TextBox } from '../../../Blocks/inputs/TextBox'
 import { Submit } from '../../../Submit/Submit'
 import { useState } from 'react'
-import { Alert } from '../../Alert'
 import { service_id, template_id, public_key } from "../../keys"
 import emailjs from 'emailjs-com'
 import style from './form.module.css'
@@ -15,7 +14,6 @@ export const Form = () => {
     const [ email, setEmail ] = useState('')
     const [ type, setType ] = useState('')
     const [ message, setMessage ] = useState('')
-    const [alertActive, setAlertActive] = useState(false)
     const [outcome, setOutcome] = useState('success')
 
 
@@ -51,10 +49,8 @@ export const Form = () => {
     emailjs.sendForm(service_id, template_id, e.target, public_key)
     .then((result) => {
         setOutcome('success')
-        setAlertActive(true)
     }, (error) => {
         setOutcome('failure')
-        setAlertActive(true)
         console.log(error.text);
     });
     }
@@ -67,13 +63,11 @@ export const Form = () => {
             setEmail('')
             setPreferred('')
         }
-        setAlertActive(false)
     }
 
     return (
         <form onSubmit={handleSubmit} className={style.form}>
             <input type='hidden' id="title" value="GENERAL"/>
-            <Alert active={alertActive} outcome={outcome} handleClose={handleClose}/>
             {/* consent, not a robot */}
             <ContactSec info={contactSec}/>
             <h3>Send a Message</h3>

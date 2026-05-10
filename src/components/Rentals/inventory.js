@@ -1,7 +1,7 @@
 import { Summary } from '../Blocks/Summary/Summary'
 import { useLocation } from 'react-router-dom'
 import { Display } from './Display/Display'
-import { Dates } from './Dates/Dates'
+import { Dates } from '../Blocks/inputs/Dates/Dates'
 import { Relative } from './relative/Relative'
 import style from './inventory.module.css'
 export const Inventory = () => {
@@ -17,7 +17,7 @@ export const Inventory = () => {
                 pathname !== '/inventory' &&
                 <Relative/>
             }
-            <Dates/>
+            <Dates type="rental"/>
             <Display key={pathname}/>
     </div>)
 } 

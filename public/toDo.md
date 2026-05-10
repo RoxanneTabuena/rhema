@@ -130,29 +130,48 @@ project audit 834 - 852
    - style
       - rental request 1111 - 1129
       - create thank you page for contact redirect 144 - 215
-
-TODO:
-
-
-
 - design team page 215 - 
    - create info tree 215 - 309
    - directory 
       - engineers 440 - 527
       - crew  & admin 527 - 631
       - pat 631 - 733
-- careers
-- join rhema page
+
+TODO:
 
 
-- Contact Forms
+
+
+5/8
+- Contact Forms 11:27 - 
+   - alert window 
+      - structure state 11:27 - 11:40
+      - mount to root 11:40 - 11:53
+      - integrate context 11:53 - 11:59
+      - restructure peek 12:01 - 12:18
+      - adjust root state 12:18 - 12:20
+      - fix counter hydration 12:23 - 12:40
+      - booklivesound debugging 12:40-2:00
+
+      - booklive sound rewrite 330 - 
+         - reconfigure dates
+         - 
+
+      - add alert cases 
+         - book live sound 12:40 - 
+         - join rhema
+         - general inquiry
+         - rental request
+      - style window
+   - create customer info context
+      - connect contact sec
+      - connect dates
+      - create and connect times
    - rental request
-      - alert window
       - email response
       - clear cache
       - desktop
    - contact us touchup
-   - rental request - desktop
    - general inquiry
       - mobile
       - desktop
@@ -162,6 +181,8 @@ TODO:
    - live sound
       - mobile
       - desktop
+
+- Team touch up 
 
 - rentals
    - content design

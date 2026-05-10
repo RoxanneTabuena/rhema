@@ -52,6 +52,7 @@
 
     .input{
         width: 7em;
+        color: slateblue;
     }
 
     .calendar button span::before{

@@ -1,13 +1,12 @@
-import { Times } from './Times/Times'
-import { Dates } from '../../../../Rentals/Dates/Dates'
-import { ContactSec } from '../../../Contact/ContactSec'
+import { Times } from '../../../../Blocks/inputs/Times/Times'
+import { Dates } from '../../../../Blocks/inputs/Dates/Dates'
+import { ContactSec } from '../../../../Blocks/inputs/Contact/ContactSec'
 import { Current } from './Current/Current'
 import { Checklist } from './Checklist/Checklist'
-import { Dropdown } from '../../../inputs/Dropdown'
-import { TextBox } from '../../../inputs/TextBox'
+import { Dropdown } from '../../../../Blocks/inputs/Dropdown'
+import { TextBox } from '../../../../Blocks/inputs/TextBox'
 import { Submit } from '../../../../Submit/Submit'
 import { useState } from 'react'
-import { Alert } from '../../../Alert'
 import { service_id, template_id, public_key } from "../../../keys"
 import emailjs from 'emailjs-com'
 import style from './order.module.css'
@@ -18,7 +17,6 @@ import { useNavigate } from 'react-router-dom'
 export const Order = () => {
     const [ type, setType ] = useState('')
     const [ message, setMessage ] = useState('')
-    const [alertActive, setAlertActive] = useState(false)
     const [outcome, setOutcome] = useState('success')
     const [ cartState, cartDispatch ] = useContext(CartContext)
     const { customer, dates } = cartState
@@ -60,23 +58,17 @@ export const Order = () => {
         navigate('/thankyou')
     }, (error) => {
         setOutcome('failure')
-        setAlertActive(true)
         console.log(error.text);
     });
-    }
-
-    const handleClose = () => {
-        setAlertActive(false)
     }
 
     return (
         <form onSubmit={handleSubmit} className={style.order}>
             <input type='hidden' id="title" value="GENERAL"/>
-            <Alert active={alertActive} outcome={outcome} handleClose={handleClose}/>
             {/* consent, not a robot */}
             <ContactSec info={contactSec}/>
             <h3>Rental Details</h3>
-            <Dates />
+            <Dates type="rental"/>
             <Checklist />
             <Current/>
             <h3>Send a Message</h3>

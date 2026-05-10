@@ -1,14 +1,25 @@
 export const initialCartState = {
     items: [],
     dates: {
-        pickup: '',
-        dropoff: ''
+        start: '',
+        end: ''
     },
     customer: {
         name: '',
         preferred: '',
         email: '',
         phone: ''
+    },
+    event: {
+        type: '',
+        location: '',
+        size: '',
+        multi: false,
+        info: ''
+    },
+    times: {
+        start: '',
+        end: '',
     }
     };
 
@@ -82,19 +93,19 @@ switch (action.type) {
             )
         };
 
-    case "PICKUP_DATE":
+    case "START_DATE":
     return {
         ...state,
         dates: {...state.dates,
-            pickup: action.payload
+            start: action.payload
         }
     };
 
-    case "DROPOFF_DATE":
+    case "END_DATE":
     return {
         ...state,
         dates: {...state.dates,
-            dropoff: action.payload
+            end: action.payload
         }
     };
 
@@ -127,6 +138,62 @@ switch (action.type) {
         ...state,
         customer: {...state.customer,
             preferred: action.payload
+        }
+    };
+
+    case "EVENT_TYPE":
+    return {
+        ...state,
+        event: {...state.event,
+            type: action.payload
+        }
+    };
+
+    case "EVENT_SIZE":
+    return {
+        ...state,
+        event: {...state.event,
+            size: action.payload
+        }
+    };
+
+    case "EVENT_MULTI":
+    return {
+        ...state,
+        event: {...state.event,
+            multi: action.payload
+        }
+    };
+
+    case "EVENT_LOCATION":
+    return {
+        ...state,
+        event: {...state.event,
+            location: action.payload
+        }
+    };
+
+    case "EVENT_INFO":
+    return {
+        ...state,
+        event: {...state.event,
+            info: action.payload
+        }
+    };
+
+    case "START_TIME":
+    return {
+        ...state,
+        times: {...state.times,
+            start: action.payload
+        }
+    };
+
+    case "END_TIME":
+    return {
+        ...state,
+        times: {...state.times,
+            end: action.payload
         }
     };
 
