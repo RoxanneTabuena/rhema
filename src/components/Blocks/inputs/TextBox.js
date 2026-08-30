@@ -7,8 +7,7 @@ export const TextBox = ({id, onChange, value, placeholder}) => {
                 name={id}
                 value = {value}
                 placeholder={placeholder? placeholder : id}
-                onChange = {({target})=> onChange(target.value)} 
-                required />
+                onChange = {({target})=> onChange(target.value)} />
         </div>
     )
 }

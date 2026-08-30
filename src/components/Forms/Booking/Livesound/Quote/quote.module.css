@@ -1,9 +1,67 @@
 .quote{
-    /* background-color: white;; */
+    background-color: white;
+    color: black;
 }
 
+input[type="checkbox"] {
+    appearance: none;
+    width: .5em;
+    height: .5em;
+    border: 1px solid black;
+    outline: none;
+    margin-right: .5em;
+}
+
+input[type="checkbox"]:checked {
+    background-color: slateblue;
+    border-color: slateblue;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+}
 /* PHONE RULES */
-@media screen and ( max-width: 699px) {}
+@media screen and ( max-width: 699px) {
+    .quote {
+        margin: 1em;
+        border-radius: 20px;
+        padding: .5em;
+    }
+
+    .quote h4 {
+        font-size: 1.1em;
+    }
+
+    .check{
+        justify-content: center;
+    }
+
+    .specifics * {
+        margin: .25em 0;
+    }
+}
 
 /* DESK RULES */
-@media screen and ( min-width: 700px) {}
+@media screen and ( min-width: 700px) {
+    .quote {
+        margin: 2em;
+        border-radius: 40px;
+        padding: 1.5em;
+        font-size: 1.5em;
+    }
+
+    .quote h4 {
+        font-size: 1.5em;
+    }
+
+    .desk {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .desk > div {
+        margin: 2em;
+    }
+}

@@ -1,18 +1,17 @@
-.dates div{
+.eventDate{
     display: flex;
     align-items: center;
 }
 
+
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
-    .dates div {
-        justify-content: center;
-    }
+    .eventDate {justify-content: center;}
 }
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {
-    .dates input { 
+    .eventDate input {
         margin-left: .5em;
     }
 }

@@ -1,69 +1,20 @@
-.dates{
-    font-weight: bold;
-}
 
-.input{
-    text-align: center;
-}
-
-.calendar button span::before{
-    color:black;
-    border-color: black;
-
-}
-
-.dates>div {
+.times > div {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
-
-.input{
-    width: 7em;
-    background-color: black;
-    border-bottom: solid 1pt white;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+.times input{
+    margin-left: .5em;
 }
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
-    .calender * {
-        font-size: 1em !important;
+    .times > div{
+        justify-content: center;
+        width: 100%;
     }
 }
 
 /* DESK RULES */
 @media screen and ( min-width: 700px) {
-    .dates {
-        font-size: 2em;
-        display: flex;
-        justify-content: center;
-        margin: 1em;
-    }
-
-    .dates > * {
-        margin: 0 1em;
-    }
-
-    .calendar * {
-        font-size: 2rem !important;
-    }
-
-    .input{
-        width: 7em;
-        color: slateblue;
-    }
-
-    .calendar button span::before{
-    height: 16px;
-    top: 16px;
-    width: 16px;
-    }
-
-
-.calendar *{
-    padding: 0 !important;
-}
 
 }

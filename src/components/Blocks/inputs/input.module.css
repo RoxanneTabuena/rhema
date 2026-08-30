@@ -15,11 +15,17 @@ select, textarea, input {
     border-left: none;
     border-right: none;
     border-bottom: black solid 1pt;
-    margin-left: .5em;
+}
+
+.dropdown > label{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
 
 /* PHONE RULES */
 @media screen and ( max-width: 699px) {
+
     input {
         margin: .5em 0;
     }
@@ -33,6 +39,10 @@ select, textarea, input {
         min-height: 5em;
         resize: vertical;
         field-sizing: content;
+    }
+
+    .dropdown > label {
+        justify-content: flex-start;
     }
 }
 

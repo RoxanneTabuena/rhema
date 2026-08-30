@@ -51,7 +51,7 @@ export const Root = () => {
     }, [menuOpen, pathname])
 
     return (
-        <div>
+        <div className={style.root}>
             {windowOpen && <Window content={windowContent}/>}
             {displays[display]}
         </div>

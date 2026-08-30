@@ -136,13 +136,6 @@ project audit 834 - 852
       - engineers 440 - 527
       - crew  & admin 527 - 631
       - pat 631 - 733
-
-TODO:
-
-
-
-
-5/8
 - Contact Forms 11:27 - 
    - alert window 
       - structure state 11:27 - 11:40
@@ -152,16 +145,26 @@ TODO:
       - adjust root state 12:18 - 12:20
       - fix counter hydration 12:23 - 12:40
       - booklivesound debugging 12:40-2:00
+5/10
+- input block rewrites
+   - contact sec 900 - 956
+      - mobile 900 - 
+      - desk
+   - dates 956 - 1030
+   - times 1030-1057
+   - booklive sound rewrite 11-12
+8/25
+- 7.27 Landing Wires 800
 
-      - booklive sound rewrite 330 - 
-         - reconfigure dates
-         - 
+TODO:
+8/28
+- add jack graphics
+   - 600 430*932 630
 
-      - add alert cases 
-         - book live sound 12:40 - 
-         - join rhema
-         - general inquiry
-         - rental request
+- add alert cases 
+   - join rhema
+   - general inquiry
+   - rental request
       - style window
    - create customer info context
       - connect contact sec

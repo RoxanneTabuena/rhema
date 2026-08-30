@@ -11,9 +11,9 @@ export const initialCartState = {
         phone: ''
     },
     event: {
-        type: '',
+        type: 'Wedding',
         location: '',
-        size: '',
+        size: 'Under 100',
         multi: false,
         info: ''
     },
