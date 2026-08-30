@@ -160,6 +160,11 @@ TODO:
 8/28
 - add jack graphics
    - 600 430*932 630
+8/29
+- 12.08 arrange home screen according to new wire
+   - 12:21 add new text 1pm
+   - 1:00 style text 1:45
+   - 1:45 Update Graphic 2:17
 
 - add alert cases 
    - join rhema

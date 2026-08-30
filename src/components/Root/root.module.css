@@ -123,6 +123,7 @@ input {
     *::before,
     *::after {
     box-sizing: border-box;
+    text-decoration: none;
     }
 
     /* Prevent font size inflation */
@@ -158,7 +159,6 @@ input {
 
     /* A elements that don't have a class get default styles */
     a {
-        text-decoration-skip-ink: auto;
         color: currentColor;
     }
 

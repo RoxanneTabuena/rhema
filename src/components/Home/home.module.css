@@ -1,4 +1,4 @@
-.logo {
+.logo, .slogan {
     font-family: 'branding';
 }
 h2{
@@ -13,10 +13,73 @@ nav>*{
     text-decoration: none;
 }
 
-.hook{
-    margin: 1em 0;
+.slogan {
+    text-align: center;
+    font-size: 2em;
 }
 
+.bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex: 2;
+    padding: 1.5em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.home {
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mainLink {
+    font-family: 'highlights';
+    color: blueviolet;
+    font-size: 4em;
+    text-shadow: 0px 3px blueviolet;
+    text-align: center;
+    position: relative;
+}
+
+.mainLink > p {
+    position: relative;
+    z-index: 20;
+}
+
+.links > p {
+    margin: .5em;
+}
+
+
+.arrow {
+    width: 50%;
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    z-index: 10;
+}
+
+.title {
+    font-family: 'titles';
+    color: mediumslateblue;
+    font-size: 1.5em;
+}
+
+.book {
+    font-size: 2em;
+    font-family: 'highlights';
+    color: white;
+    text-shadow: 2px 2px blueviolet;
+    text-align: left;
+    margin-right: .5em;
+}
+
+.book p {
+    line-height: 1;
+}
 /* PHONE RULES */
 @media screen and ( max-width: 799px) {
 
@@ -37,12 +100,12 @@ nav>*{
     }
 
     .links{
-        height: 100%;
+        min-height: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        flex: 15;
     }
-
 
     nav>*{
         font-family: 'titles';
